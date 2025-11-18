@@ -33,13 +33,13 @@ export default function Home() {
       title: 'Studio vide',
       description: 'Accès complet au studio avec équipements premium pour vos sessions créatives en toute autonomie.',
       features: ['Équipements professionnels', 'Flexibilité totale', 'Accompagnement technique'],
-      image: 'https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=800&q=80',
+      image: '/photo/studio-vide.JPG',
     },
     {
       title: 'Rec + rushs bruts',
       description: 'Enregistrement professionnel avec livraison des rushs bruts pour votre propre post-production.',
       features: ['Captation professionnelle', 'Rushs HD/4K', 'Fichiers bruts livrés'],
-      image: 'https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=800&q=80',
+      image: '/photo/rec-rush.JPG',
       popular: true,
     },
     {
@@ -79,10 +79,10 @@ export default function Home() {
   ];
 
   const equipment = [
-    { name: 'Microphones Shure SM7B', image: 'https://images.unsplash.com/photo-1590602846989-e99596d2a6ee?w=400&q=80' },
-    { name: 'Éclairages LED professionnels', image: 'https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?w=400&q=80' },
+    { name: 'Microphones Shure SM7B', image: '/photo/microphone-shure.JPG' },
+    { name: 'Éclairages LED professionnels', image: '/photo/eclairage-led.JPG' },
     { name: 'Caméras 4K', image: 'https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=400&q=80' },
-    { name: 'Table de mixage', image: 'https://images.unsplash.com/photo-1598653222000-6b7b7a552625?w=400&q=80' },
+    { name: 'Table de mixage', image: '/photo/rec-rush.JPG' },
   ];
 
   const targets = [
@@ -197,7 +197,7 @@ export default function Home() {
           >
             <div className="relative rounded-3xl overflow-hidden shadow-2xl max-w-5xl mx-auto">
               <Image
-                src="https://images.unsplash.com/photo-1598653222000-6b7b7a552625?w=1400&q=80"
+                src="/photo/studio-1.jpg"
                 alt="Studio as_studio"
                 width={1400}
                 height={800}
