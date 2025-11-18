@@ -1,5 +1,6 @@
 'use client';
 
+import React from 'react';
 import { motion } from 'framer-motion';
 import { HandshakeIcon, TrendingIcon, LightbulbIcon, GlobeIcon, SparklesIcon, AdjustmentsIcon } from '@/components/Icons';
 import Image from 'next/image';
@@ -13,7 +14,7 @@ import Link from 'next/link';
 export default function AboutPage() {
   // Helper function to render icons
   const renderIcon = (iconName: string, className: string = "w-12 h-12") => {
-    const icons: Record<string, JSX.Element> = {
+    const icons: Record<string, React.ReactElement> = {
       handshake: <HandshakeIcon className={className} />,
       trending: <TrendingIcon className={className} />,
       lightbulb: <LightbulbIcon className={className} />,
