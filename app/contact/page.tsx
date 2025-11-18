@@ -363,7 +363,7 @@ export default function ContactPage() {
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Location de as_studio"
+                    title="Location de AS Studio"
                   />
                 </div>
 

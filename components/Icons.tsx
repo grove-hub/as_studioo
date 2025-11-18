@@ -1,6 +1,6 @@
 /**
  * Professional SVG Icons Component
- * Clean, minimal icons for as_studio
+ * Clean, minimal icons for AS Studio
  */
 
 export const MicrophoneIcon = ({ className = "w-8 h-8" }: { className?: string }) => (

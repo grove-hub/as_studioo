@@ -59,7 +59,7 @@ export default function Footer() {
             <Link href="/" className="group">
               <Image
                 src="/logo.png"
-                alt="as_studio logo"
+                alt="AS Studio logo"
                 width={150}
                 height={40}
                 className="h-12 w-auto group-hover:scale-105 transition-transform"
@@ -159,10 +159,10 @@ export default function Footer() {
           className="mt-12 pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0"
         >
           <p className="text-sm text-gray-500">
-            © {currentYear} as_studio. Tous droits réservés.
+            © {currentYear} AS Studio. Tous droits réservés.
           </p>
           <p className="text-sm text-gray-400">
-            Crafted with passion in Brussels
+            Site web développée par <a href="https://pixelin.be" target="_blank" rel="noopener noreferrer" className="hover:text-[#976EFD] transition-colors">pixelin</a>
           </p>
         </motion.div>
       </div>

@@ -45,7 +45,7 @@ export default function BlogPage() {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-5xl sm:text-6xl font-bold text-gray-900 mb-6">
-              Le <span className="gradient-text">Blog</span> as_studio
+              Le <span className="gradient-text">Blog</span> AS Studio
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Conseils, tendances et actualités de la création de contenu. Découvrez nos articles pour améliorer vos productions.

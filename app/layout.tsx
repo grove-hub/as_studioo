@@ -17,8 +17,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "as_studio - Studios de création à Bruxelles | Podcast, Vidéo, Photo",
-    template: "%s | as_studio",
+    default: "AS Studio - Studios de création à Bruxelles | Podcast, Vidéo, Photo",
+    template: "%s | AS Studio",
   },
   description: "Studios de podcast, vidéo et photo à Bruxelles. Équipements premium, accompagnement professionnel et espaces modulables pour créateurs, marques et agences.",
   keywords: [
@@ -32,9 +32,9 @@ export const metadata: Metadata = {
     "production vidéo bruxelles",
     "studio photo professionnel",
   ],
-  authors: [{ name: "as_studio" }],
-  creator: "as_studio",
-  publisher: "as_studio",
+  authors: [{ name: "AS Studio" }],
+  creator: "AS Studio",
+  publisher: "AS Studio",
   formatDetection: {
     telephone: false,
   },
@@ -42,15 +42,15 @@ export const metadata: Metadata = {
     type: "website",
     locale: "fr_BE",
     url: "https://as-studio.be",
-    title: "as_studio - Studios de création à Bruxelles",
+    title: "AS Studio - Studios de création à Bruxelles",
     description: "Studios de podcast, vidéo et photo pensés pour les créateurs modernes",
-    siteName: "as_studio",
+    siteName: "AS Studio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "as_studio - Studios de création à Bruxelles",
+    title: "AS Studio - Studios de création à Bruxelles",
     description: "Studios de podcast, vidéo et photo pensés pour les créateurs modernes",
-    creator: "@as_studio",
+    creator: "@AS Studio",
   },
   robots: {
     index: true,

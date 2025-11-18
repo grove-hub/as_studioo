@@ -85,7 +85,7 @@ export default function Home() {
     {
       name: 'Microphones Shure SM7B',
       image: '/photo/microphone-shure.JPG',
-      alt: 'Microphone Shure SM7B professionnel pour enregistrement podcast et voix-off au studio as_studio Bruxelles'
+      alt: 'Microphone Shure SM7B professionnel pour enregistrement podcast et voix-off au studio AS Studio Bruxelles'
     },
     {
       name: 'Éclairages LED professionnels',
@@ -217,7 +217,7 @@ export default function Home() {
             <div className="relative rounded-3xl overflow-hidden shadow-2xl max-w-5xl mx-auto">
               <Image
                 src="/photo/studio-1.jpg"
-                alt="Studio professionnel as_studio à Bruxelles - Équipements podcast, vidéo et photo premium à Auderghem"
+                alt="Studio professionnel AS Studio à Bruxelles - Équipements podcast, vidéo et photo premium à Auderghem"
                 width={1400}
                 height={800}
                 className="w-full h-auto"
@@ -316,7 +316,7 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-              5 raisons de choisir as_studio
+              5 raisons de choisir AS Studio
             </h2>
           </motion.div>
 

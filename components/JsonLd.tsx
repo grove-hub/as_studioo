@@ -7,7 +7,7 @@ export default function JsonLd() {
   const localBusinessSchema = {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
-    name: 'as_studio',
+    name: 'AS Studio',
     description: 'Studios de podcast, vidéo et photo à Bruxelles. Équipements premium et accompagnement professionnel pour créateurs de contenu.',
     image: 'https://as-studio.be/og-image.jpg',
     '@id': 'https://as-studio.be',
@@ -41,8 +41,8 @@ export default function JsonLd() {
       },
     ],
     sameAs: [
-      'https://instagram.com/as_studio',
-      'https://tiktok.com/@as_studio',
+      'https://instagram.com/AS Studio',
+      'https://tiktok.com/@AS Studio',
     ],
     offers: [
       {
@@ -66,7 +66,7 @@ export default function JsonLd() {
   const organizationSchema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'as_studio',
+    name: 'AS Studio',
     url: 'https://as-studio.be',
     logo: 'https://as-studio.be/logo.png',
     description: 'Studios créatifs à Bruxelles pour podcast, vidéo et photo',
@@ -89,7 +89,7 @@ export default function JsonLd() {
   const websiteSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'as_studio',
+    name: 'AS Studio',
     url: 'https://as-studio.be',
     description: 'Studios de podcast, vidéo et photo à Bruxelles',
     potentialAction: {

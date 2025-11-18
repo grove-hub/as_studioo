@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 /**
  * About Page (À propos)
- * Story of as_studio, philosophy, and timeline
+ * Story of AS Studio, philosophy, and timeline
  */
 
 export default function AboutPage() {
@@ -46,7 +46,7 @@ export default function AboutPage() {
     {
       year: '2023',
       title: 'L\'idée',
-      description: 'Constatant le manque d\'espaces créatifs accessibles à Bruxelles, l\'idée d\'as_studio prend forme.',
+      description: 'Constatant le manque d\'espaces créatifs accessibles à Bruxelles, l\'idée d\'AS Studio prend forme.',
     },
     {
       year: '2024',
@@ -61,7 +61,7 @@ export default function AboutPage() {
     {
       year: 'Aujourd\'hui',
       title: 'L\'avenir',
-      description: 'Une communauté grandissante de créateurs qui donnent vie à leurs projets chez as_studio.',
+      description: 'Une communauté grandissante de créateurs qui donnent vie à leurs projets chez AS Studio.',
     },
   ];
 
@@ -116,7 +116,7 @@ export default function AboutPage() {
               <span className="gradient-text">créateurs de demain</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Chez as_studio, nous croyons que chaque créateur mérite un espace professionnel pour donner vie à ses idées. Voici notre histoire.
+              Chez AS Studio, nous croyons que chaque créateur mérite un espace professionnel pour donner vie à ses idées. Voici notre histoire.
             </p>
           </motion.div>
         </div>
@@ -135,7 +135,7 @@ export default function AboutPage() {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <Image
                   src="https://images.unsplash.com/photo-1598653222000-6b7b7a552625?w=800&q=80"
-                  alt="Intérieur studio as_studio Bruxelles - Espace créatif professionnel pour podcast vidéo photo à Auderghem"
+                  alt="Intérieur studio AS Studio Bruxelles - Espace créatif professionnel pour podcast vidéo photo à Auderghem"
                   width={800}
                   height={600}
                   className="w-full h-auto"
@@ -155,13 +155,13 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-gray-600 text-lg leading-relaxed">
                 <p>
-                  as_studio est né d'un constat simple : à Bruxelles, trop de créateurs talentueux manquaient d'espaces adaptés pour concrétiser leurs projets.
+                  AS Studio est né d'un constat simple : à Bruxelles, trop de créateurs talentueux manquaient d'espaces adaptés pour concrétiser leurs projets.
                 </p>
                 <p>
                   Nous avons imaginé un lieu où la technologie rencontre la créativité, où chaque détail est pensé pour faciliter votre processus créatif. Un studio qui ne se contente pas de louer des équipements, mais qui vous accompagne dans la réalisation de vos ambitions.
                 </p>
                 <p>
-                  Aujourd'hui, as_studio est devenu un hub créatif où podcasteurs, vidéastes, photographes et marques viennent créer du contenu qui résonne.
+                  Aujourd'hui, AS Studio est devenu un hub créatif où podcasteurs, vidéastes, photographes et marques viennent créer du contenu qui résonne.
                 </p>
                 <p className="font-semibold gradient-text text-xl">
                   Parce que votre créativité mérite le meilleur cadre pour s'exprimer.
@@ -328,7 +328,7 @@ export default function AboutPage() {
             className="text-center mb-12"
           >
             <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-              L'équipe as_studio
+              L'équipe AS Studio
             </h2>
             <p className="text-xl text-gray-600">
               Passionnés de création et de technologie
@@ -344,7 +344,7 @@ export default function AboutPage() {
           >
             <Image
               src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=80"
-              alt="Équipe as_studio Bruxelles - Professionnels création contenu podcast vidéo photo passionnés technologie"
+              alt="Équipe AS Studio Bruxelles - Professionnels création contenu podcast vidéo photo passionnés technologie"
               width={1200}
               height={700}
               className="w-full h-auto"
@@ -382,7 +382,7 @@ export default function AboutPage() {
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-              Rejoignez l'aventure as_studio
+              Rejoignez l'aventure AS Studio
             </h2>
             <p className="text-xl text-white/90 mb-10">
               Faites partie de notre communauté de créateurs et donnez vie à vos projets dans nos studios.
