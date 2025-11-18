@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 /**
@@ -55,11 +56,14 @@ export default function Footer() {
             transition={{ duration: 0.6 }}
             className="space-y-4"
           >
-            <Link href="/" className="flex items-center space-x-2 group">
-              <div className="w-12 h-12 rounded-xl gradient-primary flex items-center justify-center group-hover:scale-110 transition-transform">
-                <span className="text-white font-bold text-2xl">as</span>
-              </div>
-              <span className="text-2xl font-bold gradient-text">as_studio</span>
+            <Link href="/" className="group">
+              <Image
+                src="/logo.png"
+                alt="as_studio logo"
+                width={150}
+                height={40}
+                className="h-12 w-auto group-hover:scale-105 transition-transform"
+              />
             </Link>
             <p className="text-gray-600 text-sm leading-relaxed">
               Studios de podcast, vidéo et photo à Bruxelles, pensés pour les créateurs modernes.

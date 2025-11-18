@@ -34,12 +34,14 @@ export default function Home() {
       description: 'Accès complet au studio avec équipements premium pour vos sessions créatives en toute autonomie.',
       features: ['Équipements professionnels', 'Flexibilité totale', 'Accompagnement technique'],
       image: '/photo/studio-vide.JPG',
+      alt: 'Location studio vide Bruxelles - Espace équipé podcast vidéo photo à Auderghem',
     },
     {
       title: 'Rec + rushs bruts',
       description: 'Enregistrement professionnel avec livraison des rushs bruts pour votre propre post-production.',
       features: ['Captation professionnelle', 'Rushs HD/4K', 'Fichiers bruts livrés'],
       image: '/photo/rec-rush.JPG',
+      alt: 'Enregistrement studio Bruxelles - Captation professionnelle podcast vidéo avec rushs bruts 4K',
       popular: true,
     },
     {
@@ -47,6 +49,7 @@ export default function Home() {
       description: 'Solution clé en main : enregistrement, montage professionnel et formats courts prêts à publier.',
       features: ['Tournage complet', 'Montage expert', 'Formats courts inclus'],
       image: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&q=80',
+      alt: 'Studio enregistrement et montage Bruxelles - Production complète vidéo podcast clé en main',
     },
   ];
 
@@ -79,10 +82,26 @@ export default function Home() {
   ];
 
   const equipment = [
-    { name: 'Microphones Shure SM7B', image: '/photo/microphone-shure.JPG' },
-    { name: 'Éclairages LED professionnels', image: '/photo/eclairage-led.JPG' },
-    { name: 'Caméras 4K', image: 'https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=400&q=80' },
-    { name: 'Table de mixage', image: '/photo/rec-rush.JPG' },
+    {
+      name: 'Microphones Shure SM7B',
+      image: '/photo/microphone-shure.JPG',
+      alt: 'Microphone Shure SM7B professionnel pour enregistrement podcast et voix-off au studio as_studio Bruxelles'
+    },
+    {
+      name: 'Éclairages LED professionnels',
+      image: '/photo/eclairage-led.JPG',
+      alt: 'Éclairage LED professionnel studio vidéo photo cinématographique à Bruxelles Auderghem'
+    },
+    {
+      name: 'Caméras 4K',
+      image: 'https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=400&q=80',
+      alt: 'Caméras 4K professionnelles pour production vidéo haute qualité studio Bruxelles'
+    },
+    {
+      name: 'Table de mixage',
+      image: '/photo/rec-rush.JPG',
+      alt: 'Table de mixage audio professionnelle pour enregistrement podcast et musique Bruxelles'
+    },
   ];
 
   const targets = [
@@ -198,7 +217,7 @@ export default function Home() {
             <div className="relative rounded-3xl overflow-hidden shadow-2xl max-w-5xl mx-auto">
               <Image
                 src="/photo/studio-1.jpg"
-                alt="Studio as_studio"
+                alt="Studio professionnel as_studio à Bruxelles - Équipements podcast, vidéo et photo premium à Auderghem"
                 width={1400}
                 height={800}
                 className="w-full h-auto"
@@ -250,7 +269,7 @@ export default function Home() {
                   <div className="relative h-64 overflow-hidden">
                     <Image
                       src={offering.image}
-                      alt={offering.title}
+                      alt={offering.alt}
                       width={400}
                       height={300}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -355,7 +374,7 @@ export default function Home() {
                 <div className="relative h-48 rounded-xl overflow-hidden mb-4 shadow-lg group-hover:shadow-xl transition-all duration-300">
                   <Image
                     src={item.image}
-                    alt={item.name}
+                    alt={item.alt}
                     width={300}
                     height={300}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"

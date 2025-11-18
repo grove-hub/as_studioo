@@ -135,7 +135,7 @@ export default function AboutPage() {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <Image
                   src="https://images.unsplash.com/photo-1598653222000-6b7b7a552625?w=800&q=80"
-                  alt="Studio as_studio"
+                  alt="Intérieur studio as_studio Bruxelles - Espace créatif professionnel pour podcast vidéo photo à Auderghem"
                   width={800}
                   height={600}
                   className="w-full h-auto"
@@ -344,7 +344,7 @@ export default function AboutPage() {
           >
             <Image
               src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=80"
-              alt="Équipe as_studio"
+              alt="Équipe as_studio Bruxelles - Professionnels création contenu podcast vidéo photo passionnés technologie"
               width={1200}
               height={700}
               className="w-full h-auto"

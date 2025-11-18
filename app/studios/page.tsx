@@ -17,7 +17,8 @@ export default function StudiosPage() {
       title: 'Studio Podcast',
       tagline: 'Votre voix, amplifiée',
       description: 'Un espace acoustiquement traité pour des enregistrements audio d\'une clarté exceptionnelle. Idéal pour podcasts, interviews, et contenus audio.',
-      image: 'https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=1200&q=80',
+      image: '/photo/microphone-shure.JPG',
+      alt: 'Studio podcast professionnel Bruxelles - Microphones Shure SM7B et équipement audio premium à Auderghem',
       features: [
         'Microphones Shure SM7B professionnels',
         'Interface audio Focusrite',
@@ -35,7 +36,8 @@ export default function StudiosPage() {
       title: 'Studio Vidéo',
       tagline: 'Créez du contenu qui marque',
       description: 'Studio vidéo complet avec éclairages cinématographiques et caméras 4K. Parfait pour YouTube, formations, interviews vidéo et contenus professionnels.',
-      image: 'https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?w=1200&q=80',
+      image: '/photo/studio-1.jpg',
+      alt: 'Studio vidéo professionnel Bruxelles - Caméras 4K, éclairages LED et équipements YouTube à Auderghem',
       features: [
         'Caméras 4K professionnelles',
         'Kit éclairage LED 3 points',
@@ -53,7 +55,8 @@ export default function StudiosPage() {
       title: 'Studio Photo',
       tagline: 'Captez l\'instant parfait',
       description: 'Studio photo professionnel avec cyclorama et équipements d\'éclairage haute qualité. Idéal pour portraits, photos produits, et sessions créatives.',
-      image: 'https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=1200&q=80',
+      image: '/photo/eclairage-led.JPG',
+      alt: 'Studio photo professionnel Bruxelles - Cyclorama, éclairages LED et équipements portrait produit à Auderghem',
       features: [
         'Cyclorama blanc professionnel',
         'Fonds colorés disponibles',
@@ -114,22 +117,18 @@ export default function StudiosPage() {
 
   const whatIsIncluded = [
     {
-      icon: '🎬',
       title: 'Accès au studio',
       description: 'Profitez d\'un espace professionnel entièrement équipé pendant votre réservation.',
     },
     {
-      icon: '🎥',
       title: 'Tournage & captation',
       description: 'Selon la formule : en autonomie, avec assistance, ou tournage complet par notre équipe.',
     },
     {
-      icon: '✂️',
       title: 'Post-production',
       description: 'Option montage professionnel avec formats adaptés à vos besoins (long-form, shorts, reels).',
     },
     {
-      icon: '👥',
       title: 'Support technique',
       description: 'Accompagnement et conseils techniques tout au long de votre projet.',
     },
@@ -193,7 +192,7 @@ export default function StudiosPage() {
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                   <Image
                     src={studio.image}
-                    alt={studio.title}
+                    alt={studio.alt}
                     width={800}
                     height={600}
                     className="w-full h-auto"
@@ -362,7 +361,6 @@ export default function StudiosPage() {
                 whileHover={{ scale: 1.05 }}
                 className="bg-white p-8 rounded-2xl shadow-lg text-center"
               >
-                <div className="text-6xl mb-4">{item.icon}</div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
                   {item.title}
                 </h3>
