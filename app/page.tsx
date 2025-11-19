@@ -118,7 +118,7 @@ export default function Home() {
     },
     {
       name: 'Caméras 4K',
-      image: 'https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=400&q=80',
+      image: '/photo/AS STUDIOS-3.JPG',
       alt: 'Caméras 4K professionnelles pour production vidéo haute qualité studio Bruxelles'
     },
     {
@@ -133,30 +133,6 @@ export default function Home() {
     { title: 'Marques & Entreprises', icon: 'briefcase', desc: 'Contenus corporate, formations, webinaires' },
     { title: 'Agences créatives', icon: 'target', desc: 'Productions client, campagnes marketing' },
     { title: 'Artistes & Musiciens', icon: 'music', desc: 'Sessions live, interviews, clips' },
-  ];
-
-  const blogPosts = [
-    {
-      title: '5 conseils pour réussir votre premier podcast',
-      category: 'Podcast',
-      date: '15 Nov 2025',
-      image: 'https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=600&q=80',
-      slug: 'conseils-premier-podcast',
-    },
-    {
-      title: 'Vidéo marketing : tendances 2025',
-      category: 'Vidéo',
-      date: '12 Nov 2025',
-      image: '/photo/AS STUDIOS-20.JPG',
-      slug: 'video-marketing-tendances-2025',
-    },
-    {
-      title: 'Studio photo : quel équipement choisir ?',
-      category: 'Photo',
-      date: '8 Nov 2025',
-      image: 'https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=600&q=80',
-      slug: 'equipement-studio-photo',
-    },
   ];
 
   return (
@@ -444,83 +420,6 @@ export default function Home() {
               </motion.div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Blog Teaser Section */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-              Derniers articles
-            </h2>
-            <p className="text-xl text-gray-600">
-              Conseils, tendances et actualités de la création
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {blogPosts.map((post, index) => (
-              <motion.article
-                key={post.slug}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
-                whileHover={{ y: -8 }}
-                className="group"
-              >
-                <Link href={`/blog/${post.slug}`}>
-                  <div className="bg-white rounded-2xl overflow-hidden shadow-lg group-hover:shadow-2xl transition-all duration-300">
-                    <div className="relative h-56 overflow-hidden">
-                      <Image
-                        src={post.image}
-                        alt={post.title}
-                        width={600}
-                        height={400}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                      />
-                      <div className="absolute top-4 left-4">
-                        <span className="px-3 py-1 rounded-full gradient-primary text-white text-sm font-semibold">
-                          {post.category}
-                        </span>
-                      </div>
-                    </div>
-                    <div className="p-6">
-                      <p className="text-sm text-gray-500 mb-2">{post.date}</p>
-                      <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:gradient-text transition-colors">
-                        {post.title}
-                      </h3>
-                      <span className="text-[#976EFD] font-semibold group-hover:underline">
-                        Lire la suite →
-                      </span>
-                    </div>
-                  </div>
-                </Link>
-              </motion.article>
-            ))}
-          </div>
-
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            className="text-center mt-12"
-          >
-            <Link
-              href="/blog"
-              className="inline-block px-8 py-4 rounded-full gradient-border bg-white text-gray-900 font-semibold hover:shadow-lg transition-all duration-300"
-            >
-              Voir tous les articles
-            </Link>
-          </motion.div>
         </div>
       </section>
 

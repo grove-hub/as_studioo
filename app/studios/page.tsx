@@ -21,10 +21,8 @@ export default function StudiosPage() {
       alt: 'Studio podcast professionnel Bruxelles - Microphones Shure SM7B et équipement audio premium à Auderghem',
       features: [
         'Microphones Shure SM7B professionnels',
-        'Interface audio Focusrite',
         'Isolation acoustique premium',
         'Table de mixage Behringer',
-        'Casques monitoring professionnels',
         'Perches et supports de micro',
         'Enregistrement multi-pistes',
         'Connexion caméra pour vidéo podcast',

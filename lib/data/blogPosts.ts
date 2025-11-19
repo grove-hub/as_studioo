@@ -557,12 +557,10 @@ Le mixage audio nécessite :
 ### Pour démarrer (budget : 200-500€)
 - **Micro cravate** : Rode SmartLav+ ou Rode Wireless GO
 - **Micro canon** : Rode VideoMic
-- **Casque monitoring** : Audio-Technica ATH-M50x
 - **Enregistreur portable** : Zoom H1n
 
 ### Setup professionnel (chez AS Studios)
 - **Microphones** : Shure SM7B, Rode NT1
-- **Interface audio** : Focusrite Scarlett
 - **Préamplis** : Cloudlifter
 - **Traitement acoustique** : Panneaux professionnels
 - **Monitoring** : Casques et enceintes de référence
