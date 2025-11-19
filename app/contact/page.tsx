@@ -371,7 +371,9 @@ export default function ContactPage() {
                 <div className="space-y-4">
                   <div className="flex items-start">
                     <div className="w-10 h-10 rounded-lg gradient-primary flex items-center justify-center text-white font-semibold mr-4 flex-shrink-0">
-                      🚌
+                      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                      </svg>
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">En transports</p>
@@ -380,7 +382,9 @@ export default function ContactPage() {
                   </div>
                   <div className="flex items-start">
                     <div className="w-10 h-10 rounded-lg gradient-primary flex items-center justify-center text-white font-semibold mr-4 flex-shrink-0">
-                      🅿️
+                      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">En voiture</p>
