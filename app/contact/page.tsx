@@ -350,7 +350,7 @@ export default function ContactPage() {
                   Nous trouver
                 </h2>
                 <p className="text-gray-600 mb-6">
-                  Nos studios sont situés à Auderghem, facilement accessibles en transports en commun.
+                  On est à Auderghem, facile d'accès en bus ou en voiture.
                 </p>
 
                 {/* Google Maps Embed */}
@@ -374,8 +374,8 @@ export default function ContactPage() {
                       🚌
                     </div>
                     <div>
-                      <p className="font-semibold text-gray-900">Transports en commun</p>
-                      <p className="text-sm text-gray-600">Bus 34, 41 - Arrêt "Delta"</p>
+                      <p className="font-semibold text-gray-900">En transports</p>
+                      <p className="text-sm text-gray-600">Bus 34 et 41, arrêt Delta à 5 min</p>
                     </div>
                   </div>
                   <div className="flex items-start">
@@ -383,8 +383,8 @@ export default function ContactPage() {
                       🅿️
                     </div>
                     <div>
-                      <p className="font-semibold text-gray-900">Parking</p>
-                      <p className="text-sm text-gray-600">Parking gratuit disponible sur place</p>
+                      <p className="font-semibold text-gray-900">En voiture</p>
+                      <p className="text-sm text-gray-600">Places de parking gratuites devant le studio</p>
                     </div>
                   </div>
                 </div>
