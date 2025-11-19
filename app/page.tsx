@@ -118,7 +118,7 @@ export default function Home() {
     },
     {
       name: 'Caméras 4K',
-      image: '/photo/AS STUDIOS-3.JPG',
+      image: '/photo/sony.jpg',
       alt: 'Caméras 4K professionnelles pour production vidéo haute qualité studio Bruxelles'
     },
     {
@@ -267,7 +267,7 @@ export default function Home() {
                       alt={offering.alt}
                       width={400}
                       height={300}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                     <h3 className="absolute bottom-4 left-6 text-2xl font-bold text-white">

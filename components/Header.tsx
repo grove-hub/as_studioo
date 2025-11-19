@@ -34,7 +34,6 @@ export default function Header() {
     { href: '/', label: 'Accueil' },
     { href: '/studios', label: 'Studios' },
     { href: '/a-propos', label: 'À propos' },
-    { href: '/blog', label: 'Blog' },
     { href: '/contact', label: 'Contact' },
   ];
 
