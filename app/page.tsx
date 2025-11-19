@@ -1,5 +1,6 @@
 'use client';
 
+import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -14,7 +15,7 @@ import { MicrophoneIcon, UsersIcon, AdjustmentsIcon, LocationIcon, SparklesIcon,
 export default function Home() {
   // Helper function to render icons
   const renderIcon = (iconName: string, className: string = "w-12 h-12") => {
-    const icons: Record<string, JSX.Element> = {
+    const icons: Record<string, React.ReactElement> = {
       microphone: <MicrophoneIcon className={className} />,
       users: <UsersIcon className={className} />,
       adjustments: <AdjustmentsIcon className={className} />,
