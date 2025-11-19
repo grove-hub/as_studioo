@@ -93,28 +93,52 @@ export default function AboutPage() {
 
   const teamMembers = [
     {
-      name: 'SMAIN',
-      role: 'Founder',
-      specialty: 'Creative',
-      image: '/images/team/smain.jpg',
+      name: 'Sma',
+      role: 'Fondateur',
+      specialty: 'Créatif',
+      image: '/images/team/sma.jpg',
     },
     {
       name: 'Amandine',
-      role: 'Founder',
+      role: 'Fondatrice',
       specialty: 'Project Manager',
       image: '/images/team/amandine.jpg',
     },
     {
+      name: 'Maxime',
+      role: 'Cadreur',
+      specialty: 'Monteur',
+      image: '/images/team/maxime.jpg',
+    },
+    {
+      name: 'Jeanne',
+      role: 'Junior Project Manager',
+      specialty: '',
+      image: '/images/team/jeanne.jpg',
+    },
+    {
+      name: 'Imane',
+      role: 'Community Manager',
+      specialty: '',
+      image: '/images/team/imane.jpg',
+    },
+    {
+      name: 'Bastien',
+      role: 'Cadreur',
+      specialty: 'Monteur',
+      image: '/images/team/bastien.jpg',
+    },
+    {
       name: 'Thomas',
-      role: 'Producer',
-      specialty: 'Cameraman • Editor',
+      role: 'Réalisateur',
+      specialty: 'Cadreur • Monteur',
       image: '/images/team/thomas.jpg',
     },
     {
-      name: 'Maxime',
-      role: 'Cameraman',
-      specialty: 'Editor',
-      image: '/images/team/maxime.jpg',
+      name: 'Pippa',
+      role: 'Mascotte',
+      specialty: '🐾',
+      image: '/images/team/pippa.jpg',
     },
   ];
 
@@ -170,7 +194,7 @@ export default function AboutPage() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {teamMembers.map((member, index) => (
               <motion.div
                 key={member.name}
@@ -194,7 +218,7 @@ export default function AboutPage() {
                   >
                     <div className="text-center">
                       <p className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-2">
-                        {member.role} • {member.specialty}
+                        {member.specialty ? `${member.role} • ${member.specialty}` : member.role}
                       </p>
                       <h3 className="text-4xl font-bold gradient-text mb-4">
                         {member.name}
@@ -212,14 +236,14 @@ export default function AboutPage() {
                   >
                     <Image
                       src={member.image}
-                      alt={`${member.name} - ${member.role} ${member.specialty} AS Studios`}
+                      alt={`${member.name} - ${member.specialty ? `${member.role} ${member.specialty}` : member.role} AS Studios`}
                       fill
                       className="object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
                     <div className="absolute bottom-6 left-6 right-6 text-white">
                       <h3 className="text-2xl font-bold mb-1">{member.name}</h3>
-                      <p className="text-sm opacity-90">{member.role} • {member.specialty}</p>
+                      <p className="text-sm opacity-90">{member.specialty ? `${member.role} • ${member.specialty}` : member.role}</p>
                     </div>
                   </div>
                 </motion.div>
