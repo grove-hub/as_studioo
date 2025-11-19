@@ -113,25 +113,6 @@ export default function StudiosPage() {
     },
   ];
 
-  const whatIsIncluded = [
-    {
-      title: 'Accès au studio',
-      description: 'Profitez d\'un espace professionnel entièrement équipé pendant votre réservation.',
-    },
-    {
-      title: 'Tournage & captation',
-      description: 'Selon la formule : en autonomie, avec assistance, ou tournage complet par notre équipe.',
-    },
-    {
-      title: 'Post-production',
-      description: 'Option montage professionnel avec formats adaptés à vos besoins (long-form, shorts, reels).',
-    },
-    {
-      title: 'Support technique',
-      description: 'Accompagnement et conseils techniques tout au long de votre projet.',
-    },
-  ];
-
   return (
     <div className="overflow-hidden">
       {/* Hero Section */}
@@ -324,47 +305,6 @@ export default function StudiosPage() {
                     </Link>
                   </div>
                 </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* What's Included Section */}
-      <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-              Ce que comprend la réservation
-            </h2>
-            <p className="text-xl text-gray-600">
-              Un service complet pour vos projets créatifs
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {whatIsIncluded.map((item, index) => (
-              <motion.div
-                key={item.title}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                whileHover={{ scale: 1.05 }}
-                className="bg-white p-8 rounded-2xl shadow-lg text-center"
-              >
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  {item.title}
-                </h3>
-                <p className="text-gray-600 text-sm">
-                  {item.description}
-                </p>
               </motion.div>
             ))}
           </div>

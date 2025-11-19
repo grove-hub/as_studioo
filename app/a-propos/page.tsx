@@ -105,12 +105,6 @@ export default function AboutPage() {
       image: '/equipe/amandine.jpg',
     },
     {
-      name: 'Maxime',
-      role: 'Cadreur',
-      specialty: 'Monteur',
-      image: '/equipe/maxime.jpg',
-    },
-    {
       name: 'Jeanne',
       role: 'Junior Project Manager',
       specialty: '',
@@ -123,16 +117,28 @@ export default function AboutPage() {
       image: '/equipe/imane.jpg',
     },
     {
-      name: 'Bastien',
-      role: 'Cadreur',
-      specialty: 'Monteur',
-      image: '/equipe/bastien.jpg',
-    },
-    {
       name: 'Thomas',
       role: 'Réalisateur',
       specialty: 'Cadreur • Monteur',
       image: '/equipe/thomas.jpg',
+    },
+    {
+      name: 'Maxime',
+      role: 'Cadreur',
+      specialty: 'Monteur',
+      image: '/equipe/maxime.jpg',
+    },
+    {
+      name: 'Antoine',
+      role: 'Cadreur',
+      specialty: 'Monteur',
+      image: '/equipe/antoine.jpg',
+    },
+    {
+      name: 'Bastien',
+      role: 'Cadreur',
+      specialty: 'Monteur',
+      image: '/equipe/bastien.jpg',
     },
     {
       name: 'Pippa',
