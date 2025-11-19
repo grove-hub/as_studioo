@@ -123,7 +123,7 @@ export default function Home() {
       title: 'Vidéo marketing : tendances 2025',
       category: 'Vidéo',
       date: '12 Nov 2025',
-      image: 'https://images.unsplash.com/photo-1536240478700-b869070f9279?w=600&q=80',
+      image: '/photo/AS STUDIOS-20.JPG',
       slug: 'video-marketing-tendances-2025',
     },
     {
