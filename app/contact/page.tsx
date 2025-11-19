@@ -377,7 +377,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">En transports</p>
-                      <p className="text-sm text-gray-600">Bus 34 et 41, arrêt Delta à 5 min</p>
+                      <p className="text-sm text-gray-600">À 1 min du métro Hankar</p>
                     </div>
                   </div>
                   <div className="flex items-start">
