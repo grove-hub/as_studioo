@@ -152,6 +152,83 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Team Section */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+              L'équipe AS Studio
+            </h2>
+            <p className="text-xl text-gray-600">
+              Passionnés de création et de technologie
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            {teamMembers.map((member, index) => (
+              <motion.div
+                key={member.name}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                className="relative h-80 cursor-pointer perspective-1000"
+                onClick={() => setFlippedCard(flippedCard === index ? null : index)}
+              >
+                <motion.div
+                  animate={{ rotateY: flippedCard === index ? 180 : 0 }}
+                  transition={{ duration: 0.6, ease: 'easeInOut' }}
+                  className="relative w-full h-full preserve-3d"
+                  style={{ transformStyle: 'preserve-3d' }}
+                >
+                  {/* Front */}
+                  <div
+                    className="absolute inset-0 backface-hidden rounded-xl shadow-lg p-6 bg-gradient-to-br from-white via-purple-50/30 to-rose-50/20 border border-gray-100 flex flex-col justify-center items-center"
+                    style={{ backfaceVisibility: 'hidden' }}
+                  >
+                    <div className="text-center">
+                      <p className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-2">
+                        {member.role} • {member.specialty}
+                      </p>
+                      <h3 className="text-4xl font-bold gradient-text mb-4">
+                        {member.name}
+                      </h3>
+                      <p className="text-sm text-gray-400">
+                        Cliquez pour voir la photo
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Back */}
+                  <div
+                    className="absolute inset-0 backface-hidden rounded-xl shadow-lg overflow-hidden"
+                    style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}
+                  >
+                    <Image
+                      src={member.image}
+                      alt={`${member.name} - ${member.role} ${member.specialty} AS Studio`}
+                      fill
+                      className="object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+                    <div className="absolute bottom-6 left-6 right-6 text-white">
+                      <h3 className="text-2xl font-bold mb-1">{member.name}</h3>
+                      <p className="text-sm opacity-90">{member.role} • {member.specialty}</p>
+                    </div>
+                  </div>
+                </motion.div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Story Section */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -341,83 +418,6 @@ export default function AboutPage() {
                 <p className="text-gray-600 text-sm">
                   {value.text}
                 </p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Team Section */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-              L'équipe AS Studio
-            </h2>
-            <p className="text-xl text-gray-600">
-              Passionnés de création et de technologie
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {teamMembers.map((member, index) => (
-              <motion.div
-                key={member.name}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="relative h-80 cursor-pointer perspective-1000"
-                onClick={() => setFlippedCard(flippedCard === index ? null : index)}
-              >
-                <motion.div
-                  animate={{ rotateY: flippedCard === index ? 180 : 0 }}
-                  transition={{ duration: 0.6, ease: 'easeInOut' }}
-                  className="relative w-full h-full preserve-3d"
-                  style={{ transformStyle: 'preserve-3d' }}
-                >
-                  {/* Front */}
-                  <div
-                    className="absolute inset-0 backface-hidden rounded-xl shadow-lg p-6 bg-gradient-to-br from-white via-purple-50/30 to-rose-50/20 border border-gray-100 flex flex-col justify-center items-center"
-                    style={{ backfaceVisibility: 'hidden' }}
-                  >
-                    <div className="text-center">
-                      <p className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-2">
-                        {member.role} • {member.specialty}
-                      </p>
-                      <h3 className="text-4xl font-bold gradient-text mb-4">
-                        {member.name}
-                      </h3>
-                      <p className="text-sm text-gray-400">
-                        Cliquez pour voir la photo
-                      </p>
-                    </div>
-                  </div>
-
-                  {/* Back */}
-                  <div
-                    className="absolute inset-0 backface-hidden rounded-xl shadow-lg overflow-hidden"
-                    style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}
-                  >
-                    <Image
-                      src={member.image}
-                      alt={`${member.name} - ${member.role} ${member.specialty} AS Studio`}
-                      fill
-                      className="object-cover"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
-                    <div className="absolute bottom-6 left-6 right-6 text-white">
-                      <h3 className="text-2xl font-bold mb-1">{member.name}</h3>
-                      <p className="text-sm opacity-90">{member.role} • {member.specialty}</p>
-                    </div>
-                  </div>
-                </motion.div>
               </motion.div>
             ))}
           </div>
