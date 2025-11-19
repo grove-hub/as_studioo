@@ -45,29 +45,6 @@ export default function AboutPage() {
     },
   ];
 
-  const timeline = [
-    {
-      year: '2023',
-      title: 'L\'idée',
-      description: 'En attente d\'infos',
-    },
-    {
-      year: '2024',
-      title: 'La création',
-      description: 'En attente d\'infos',
-    },
-    {
-      year: '2025',
-      title: 'L\'expansion',
-      description: 'En attente d\'infos',
-    },
-    {
-      year: 'Aujourd\'hui',
-      title: 'L\'avenir',
-      description: 'En attente d\'infos',
-    },
-  ];
-
   const values = [
     {
       icon: 'handshake',
@@ -349,63 +326,6 @@ export default function AboutPage() {
                 </p>
               </motion.div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Timeline Section */}
-      <section className="py-24 bg-white">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-              Notre parcours
-            </h2>
-            <p className="text-xl text-gray-600">
-              De l'idée à la réalité
-            </p>
-          </motion.div>
-
-          <div className="relative">
-            {/* Timeline line */}
-            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#976EFD] to-[#FFDEFC]" />
-
-            <div className="space-y-12">
-              {timeline.map((item, index) => (
-                <motion.div
-                  key={item.year}
-                  initial={{ opacity: 0, x: -30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: index * 0.2 }}
-                  className="relative pl-20"
-                >
-                  {/* Timeline dot */}
-                  <div className="absolute left-5 top-2 w-7 h-7 rounded-full gradient-primary shadow-lg flex items-center justify-center">
-                    <div className="w-3 h-3 rounded-full bg-white" />
-                  </div>
-
-                  <div className="bg-gradient-to-br from-purple-50 to-rose-50 p-6 rounded-xl">
-                    <div className="flex items-baseline gap-4 mb-2">
-                      <span className="text-2xl font-bold gradient-text">
-                        {item.year}
-                      </span>
-                      <h3 className="text-xl font-bold text-gray-900">
-                        {item.title}
-                      </h3>
-                    </div>
-                    <p className="text-gray-600">
-                      {item.description}
-                    </p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
           </div>
         </div>
       </section>
