@@ -217,7 +217,7 @@ export default function Home() {
           >
             <div className="relative rounded-3xl overflow-hidden shadow-2xl max-w-5xl mx-auto">
               <Image
-                src="/photo/studio-1.jpg"
+                src="/photo/as studio-6.jpg"
                 alt="Studio professionnel AS Studio à Bruxelles - Équipements podcast, vidéo et photo premium à Auderghem"
                 width={1400}
                 height={800}
