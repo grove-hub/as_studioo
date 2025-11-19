@@ -47,22 +47,22 @@ export default function AboutPage() {
     {
       year: '2023',
       title: 'L\'idée',
-      description: 'Constatant le manque d\'espaces créatifs accessibles à Bruxelles, l\'idée d\'AS Studio prend forme.',
+      description: 'En attente d\'infos',
     },
     {
       year: '2024',
       title: 'La création',
-      description: 'Ouverture du premier studio à Auderghem, avec un focus sur le podcast et la vidéo.',
+      description: 'En attente d\'infos',
     },
     {
       year: '2025',
       title: 'L\'expansion',
-      description: 'Ajout du studio photo et développement des services de post-production.',
+      description: 'En attente d\'infos',
     },
     {
       year: 'Aujourd\'hui',
       title: 'L\'avenir',
-      description: 'Une communauté grandissante de créateurs qui donnent vie à leurs projets chez AS Studio.',
+      description: 'En attente d\'infos',
     },
   ];
 
