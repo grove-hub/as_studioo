@@ -316,7 +316,7 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-              5 raisons de choisir AS Studio
+              5 raisons de choisir AS Studios
             </h2>
           </motion.div>
 

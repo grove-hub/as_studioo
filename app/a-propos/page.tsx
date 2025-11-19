@@ -146,7 +146,7 @@ export default function AboutPage() {
               <span className="gradient-text">créateurs de demain</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Chez AS Studio, nous croyons que chaque créateur mérite un espace professionnel pour donner vie à ses idées. Voici notre histoire.
+              Chez AS Studios, nous croyons que chaque créateur mérite un espace professionnel pour donner vie à ses idées. Voici notre histoire.
             </p>
           </motion.div>
         </div>
@@ -163,7 +163,7 @@ export default function AboutPage() {
             className="text-center mb-12"
           >
             <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-              L'équipe AS Studio
+              L'équipe AS Studios
             </h2>
             <p className="text-xl text-gray-600">
               Passionnés de création et de technologie
@@ -212,7 +212,7 @@ export default function AboutPage() {
                   >
                     <Image
                       src={member.image}
-                      alt={`${member.name} - ${member.role} ${member.specialty} AS Studio`}
+                      alt={`${member.name} - ${member.role} ${member.specialty} AS Studios`}
                       fill
                       className="object-cover"
                     />
@@ -262,13 +262,13 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-gray-600 text-lg leading-relaxed">
                 <p>
-                  AS Studio est né d'un constat simple : à Bruxelles, trop de créateurs talentueux manquaient d'espaces adaptés pour concrétiser leurs projets.
+                  AS Studios est né d'un constat simple : à Bruxelles, trop de créateurs talentueux manquaient d'espaces adaptés pour concrétiser leurs projets.
                 </p>
                 <p>
                   Nous avons imaginé un lieu où la technologie rencontre la créativité, où chaque détail est pensé pour faciliter votre processus créatif. Un studio qui ne se contente pas de louer des équipements, mais qui vous accompagne dans la réalisation de vos ambitions.
                 </p>
                 <p>
-                  Aujourd'hui, AS Studio est devenu un hub créatif où podcasteurs, vidéastes, photographes et marques viennent créer du contenu qui résonne.
+                  Aujourd'hui, AS Studios est devenu un hub créatif où podcasteurs, vidéastes, photographes et marques viennent créer du contenu qui résonne.
                 </p>
                 <p className="font-semibold gradient-text text-xl">
                   Parce que votre créativité mérite le meilleur cadre pour s'exprimer.
@@ -447,7 +447,7 @@ export default function AboutPage() {
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-              Rejoignez l'aventure AS Studio
+              Rejoignez l'aventure AS Studios
             </h2>
             <p className="text-xl text-white/90 mb-10">
               Faites partie de notre communauté de créateurs et donnez vie à vos projets dans nos studios.

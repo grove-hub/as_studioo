@@ -37,7 +37,7 @@ export default function MentionsLegalesPage() {
           >
             <h2>Éditeur du site</h2>
             <p>
-              <strong>AS Studio</strong><br />
+              <strong>AS Studios</strong><br />
               Chaussée de Wavre 1259<br />
               1160 Auderghem, Belgique<br />
               Téléphone : <a href="tel:+32486167825">0486 16 78 25</a>
@@ -52,7 +52,7 @@ export default function MentionsLegalesPage() {
 
             <h2>Propriété intellectuelle</h2>
             <p>
-              L'ensemble du contenu de ce site (textes, images, vidéos, logos) est la propriété exclusive d'AS Studio, sauf mention contraire. Toute reproduction, même partielle, est interdite sans autorisation préalable.
+              L'ensemble du contenu de ce site (textes, images, vidéos, logos) est la propriété exclusive d'AS Studios, sauf mention contraire. Toute reproduction, même partielle, est interdite sans autorisation préalable.
             </p>
 
             <h2>Données personnelles</h2>
@@ -70,7 +70,7 @@ export default function MentionsLegalesPage() {
 
             <h2>Responsabilité</h2>
             <p>
-              AS Studio s'efforce d'assurer l'exactitude des informations présentes sur ce site mais ne peut garantir l'absence d'erreurs. Les prix et disponibilités sont donnés à titre indicatif et peuvent être modifiés sans préavis.
+              AS Studios s'efforce d'assurer l'exactitude des informations présentes sur ce site mais ne peut garantir l'absence d'erreurs. Les prix et disponibilités sont donnés à titre indicatif et peuvent être modifiés sans préavis.
             </p>
 
             <div className="mt-12 p-6 bg-gradient-to-br from-purple-50 to-rose-50 rounded-xl">

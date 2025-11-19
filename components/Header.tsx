@@ -60,7 +60,7 @@ export default function Header() {
               <Link href="/" className="flex items-center space-x-3">
                 <Image
                   src="/logo.png"
-                  alt="AS Studio logo"
+                  alt="AS Studios logo"
                   width={150}
                   height={40}
                   className="h-18 w-auto"

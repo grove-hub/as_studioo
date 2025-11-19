@@ -24,7 +24,7 @@ export const blogPosts: BlogPost[] = [
     category: 'Podcast',
     date: '15 Nov 2025',
     image: 'https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=1200&q=80',
-    author: 'L\'équipe AS Studio',
+    author: 'L\'équipe AS Studios',
     readTime: '5 min',
     content: `
 Le podcasting est devenu un moyen incontournable de partager des idées, raconter des histoires et créer une communauté. Si vous envisagez de lancer votre propre podcast, voici cinq conseils essentiels pour bien démarrer.
@@ -41,7 +41,7 @@ Un concept clair vous aidera à rester cohérent et à fidéliser votre audience
 
 ## 2. Investissez dans un bon microphone
 
-La qualité audio est cruciale pour un podcast. Un micro USB de qualité comme le Shure SM7B ou le Audio-Technica AT2020 peut transformer votre son. Chez AS Studio, nous mettons à votre disposition des microphones professionnels qui garantissent une qualité broadcast.
+La qualité audio est cruciale pour un podcast. Un micro USB de qualité comme le Shure SM7B ou le Audio-Technica AT2020 peut transformer votre son. Chez AS Studios, nous mettons à votre disposition des microphones professionnels qui garantissent une qualité broadcast.
 
 **Conseils audio :**
 - Enregistrez dans un espace calme
@@ -71,7 +71,7 @@ La régularité est la clé du succès en podcasting. Publiez à intervalles ré
 
 **Prêt à enregistrer votre premier podcast ?**
 
-Chez AS Studio, nous mettons à votre disposition tout le matériel nécessaire et notre expertise pour vous accompagner dans la création de votre podcast. Réservez dès maintenant votre session !
+Chez AS Studios, nous mettons à votre disposition tout le matériel nécessaire et notre expertise pour vous accompagner dans la création de votre podcast. Réservez dès maintenant votre session !
     `,
   },
   {
@@ -81,7 +81,7 @@ Chez AS Studio, nous mettons à votre disposition tout le matériel nécessaire 
     category: 'Vidéo',
     date: '12 Nov 2025',
     image: 'https://images.unsplash.com/photo-1536240478700-b869070f9279?w=1200&q=80',
-    author: 'L\'équipe AS Studio',
+    author: 'L\'équipe AS Studios',
     readTime: '6 min',
     content: `
 Le marketing vidéo continue de dominer le paysage digital en 2025. Voici les tendances qui façonnent l'industrie cette année.
@@ -117,7 +117,7 @@ Les vidéos interactives permettent à l'audience de participer activement :
 ## 4. Le live streaming professionnel
 
 Les lives ne sont plus improvisés. Les marques investissent dans :
-- Des studios équipés (comme AS Studio !)
+- Des studios équipés (comme AS Studios !)
 - Des éclairages professionnels
 - Des décors travaillés
 - Une qualité broadcast
@@ -149,7 +149,7 @@ Avec 80% du trafic sur mobile, la vidéo verticale (9:16) devient standard, mêm
 
 **Besoin d'aide pour votre stratégie vidéo ?**
 
-Chez AS Studio, nous vous accompagnons de la conception à la réalisation de vos contenus vidéo. Studio professionnel, matériel 4K, et post-production incluse.
+Chez AS Studios, nous vous accompagnons de la conception à la réalisation de vos contenus vidéo. Studio professionnel, matériel 4K, et post-production incluse.
     `,
   },
   {
@@ -159,7 +159,7 @@ Chez AS Studio, nous vous accompagnons de la conception à la réalisation de vo
     category: 'Photo',
     date: '8 Nov 2025',
     image: 'https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=1200&q=80',
-    author: 'L\'équipe AS Studio',
+    author: 'L\'équipe AS Studios',
     readTime: '7 min',
     content: `
 Monter un studio photo nécessite de faire les bons choix d'équipement. Voici notre guide complet pour vous aider.
@@ -172,7 +172,7 @@ Avant l'équipement, pensez à l'espace :
 - Murs clairs (idéalement blancs)
 - Possibilité d'occultation totale
 
-Chez AS Studio, nos espaces sont spécialement conçus pour la photo professionnelle.
+Chez AS Studios, nos espaces sont spécialement conçus pour la photo professionnelle.
 
 ## L'éclairage : le nerf de la guerre
 
@@ -215,7 +215,7 @@ Ne négligez pas les modificateurs :
 
 ### Types de fonds
 
-- **Cyclorama** : fond courbe seamless (comme chez AS Studio)
+- **Cyclorama** : fond courbe seamless (comme chez AS Studios)
 - **Toiles** : multiples couleurs disponibles
 - **Papier** : économique mais consommable
 - **Tissu** : pliable et transportable
@@ -289,7 +289,7 @@ Privilégiez la qualité optique à la quantité.
 
 ## L'alternative : louer un studio équipé
 
-Monter son propre studio représente un investissement important (10 000 à 50 000€). La location d'un studio professionnel comme AS Studio offre :
+Monter son propre studio représente un investissement important (10 000 à 50 000€). La location d'un studio professionnel comme AS Studios offre :
 
 - Équipement haut de gamme déjà en place
 - Pas d'investissement initial
@@ -301,7 +301,7 @@ Monter son propre studio représente un investissement important (10 000 à 50 0
 
 **Envie de tester un studio professionnel ?**
 
-Réservez une session chez AS Studio et profitez de notre équipement photo complet : cyclorama, éclairages LED et flash, zone maquillage, et accompagnement expert.
+Réservez une session chez AS Studios et profitez de notre équipement photo complet : cyclorama, éclairages LED et flash, zone maquillage, et accompagnement expert.
     `,
   },
   {
@@ -311,7 +311,7 @@ Réservez une session chez AS Studio et profitez de notre équipement photo comp
     category: 'Branding',
     date: '5 Nov 2025',
     image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=1200&q=80',
-    author: 'L\'équipe AS Studio',
+    author: 'L\'équipe AS Studios',
     readTime: '5 min',
     content: `
 Dans un monde où l'attention est la ressource la plus précieuse, créer du contenu engageant est devenu un art. Voici comment y parvenir.
@@ -402,7 +402,7 @@ Même avec un smartphone, soignez :
 - **Stabilité** : trépied ou gimbal
 - **Audio** : micro externe si possible
 
-Chez AS Studio, nous vous aidons à créer du contenu de qualité broadcast.
+Chez AS Studios, nous vous aidons à créer du contenu de qualité broadcast.
 
 ## Les sous-titres sont obligatoires
 
@@ -451,7 +451,7 @@ L'algorithme favorise l'engagement mutuel :
 
 **Besoin d'aide pour créer du contenu pro ?**
 
-Chez AS Studio, nous vous accompagnons dans la création de contenus optimisés pour les réseaux sociaux. Studio équipé, post-production, et formats adaptés à chaque plateforme.
+Chez AS Studios, nous vous accompagnons dans la création de contenus optimisés pour les réseaux sociaux. Studio équipé, post-production, et formats adaptés à chaque plateforme.
     `,
   },
   {
@@ -461,7 +461,7 @@ Chez AS Studio, nous vous accompagnons dans la création de contenus optimisés 
     category: 'Vidéo',
     date: '1 Nov 2025',
     image: 'https://images.unsplash.com/photo-1590602846989-e99596d2a6ee?w=1200&q=80',
-    author: 'L\'équipe AS Studio',
+    author: 'L\'équipe AS Studios',
     readTime: '6 min',
     content: `
 "Les spectateurs pardonnent une mauvaise image, jamais un mauvais son." Cette maxime du cinéma est plus vraie que jamais. Voici pourquoi et comment soigner votre audio.
@@ -560,7 +560,7 @@ Le mixage audio nécessite :
 - **Casque monitoring** : Audio-Technica ATH-M50x
 - **Enregistreur portable** : Zoom H1n
 
-### Setup professionnel (chez AS Studio)
+### Setup professionnel (chez AS Studios)
 - **Microphones** : Shure SM7B, Rode NT1
 - **Interface audio** : Focusrite Scarlett
 - **Préamplis** : Cloudlifter
@@ -640,7 +640,7 @@ Si vous constatez :
 
 ---
 
-**Enregistrez avec un son parfait chez AS Studio**
+**Enregistrez avec un son parfait chez AS Studios**
 
 Notre studio est acoustiquement traité et équipé de microphones professionnels. Post-production audio incluse dans notre formule "Rec + montage". Réservez votre session !
     `,
