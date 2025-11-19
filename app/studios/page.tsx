@@ -22,7 +22,7 @@ export default function StudiosPage() {
       features: [
         'Microphones Shure SM7B professionnels',
         'Isolation acoustique premium',
-        'Table de mixage Behringer',
+        'Table de mixage RØDECaster',
         'Perches et supports de micro',
         'Enregistrement multi-pistes',
         'Connexion caméra pour vidéo podcast',
