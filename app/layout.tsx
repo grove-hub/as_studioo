@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     default: "AS Studios - Studios de création à Bruxelles | Podcast, Vidéo, Photo",
     template: "%s | AS Studios",
   },
-  description: "Studios de podcast, vidéo et photo à Bruxelles. Équipements premium, accompagnement professionnel et espaces modulables pour créateurs, marques et agences.",
+  description: "Studios de podcast, vidéo et photo à Bruxelles. Formules flexibles du studio vide à l'accompagnement VIP. Espaces modulables pour créateurs, marques et agences.",
   keywords: [
     "studio podcast bruxelles",
     "studio vidéo bruxelles",

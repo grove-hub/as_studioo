@@ -8,7 +8,7 @@ export default function JsonLd() {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
     name: 'AS Studios',
-    description: 'Studios de podcast, vidéo et photo à Bruxelles. Équipements premium et accompagnement professionnel pour créateurs de contenu.',
+    description: 'Studios de podcast, vidéo et photo à Bruxelles. Formules flexibles du studio vide à l\'accompagnement VIP pour créateurs de contenu.',
     image: 'https://as-studio.be/og-image.jpg',
     '@id': 'https://as-studio.be',
     url: 'https://as-studio.be',
@@ -47,18 +47,23 @@ export default function JsonLd() {
     offers: [
       {
         '@type': 'Offer',
-        name: 'Studio Podcast',
-        description: 'Location de studio podcast avec équipements professionnels',
+        name: 'Studio Vide',
+        description: 'Location d\'espace studio sans équipe, clients apportent leur propre matériel',
       },
       {
         '@type': 'Offer',
-        name: 'Studio Vidéo',
-        description: 'Location de studio vidéo avec caméras 4K et éclairages professionnels',
+        name: 'Rec Solo',
+        description: 'Captation vidéo professionnelle avec livraison des rushs bruts sous 48h',
       },
       {
         '@type': 'Offer',
-        name: 'Studio Photo',
-        description: 'Location de studio photo avec cyclorama et équipements d\'éclairage',
+        name: 'Rec + Montage',
+        description: 'Production complète avec enregistrement, montage et 2 shorts pour réseaux sociaux',
+      },
+      {
+        '@type': 'Offer',
+        name: 'Session VIP',
+        description: 'Accompagnement complet avec interviewer, préparation, tournage et montage + 5 shorts',
       },
     ],
   };

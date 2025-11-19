@@ -30,44 +30,68 @@ export default function Home() {
 
   const studioOfferings = [
     {
-      title: 'Studio vide',
-      description: 'Accès complet au studio avec équipements premium pour vos sessions créatives en toute autonomie.',
-      features: ['Équipements professionnels', 'Flexibilité totale', 'Accompagnement technique'],
+      title: 'STUDIO VIDE',
+      description: 'Accédez à notre studio sans présence d\'équipe',
+      features: [
+        'Installez votre matériel et travaillez en toute autonomie',
+        'Idéal pour les créateurs équipés et indépendants',
+        'Créez votre contenu en toute liberté, dans un espace pro'
+      ],
       image: '/photo/studio-vide.JPG',
-      alt: 'Location studio vide Bruxelles - Espace équipé podcast vidéo photo à Auderghem',
+      alt: 'Location studio vide Bruxelles - Espace pour créateurs avec leur propre matériel',
     },
     {
-      title: 'Rec + rushs bruts',
-      description: 'Enregistrement professionnel avec livraison des rushs bruts pour votre propre post-production.',
-      features: ['Captation professionnelle', 'Rushs HD/4K', 'Fichiers bruts livrés'],
+      title: 'REC SOLO',
+      description: 'Un membre de notre équipe filme votre session',
+      features: [
+        'Livraison des rushs vidéo + son brut sous 48h',
+        'Vous gardez la main sur le montage et la diffusion',
+        'Parfait pour ceux qui veulent un tournage pro sans post-prod'
+      ],
       image: '/photo/rec-rush.JPG',
-      alt: 'Enregistrement studio Bruxelles - Captation professionnelle podcast vidéo avec rushs bruts 4K',
-      popular: true,
+      alt: 'Enregistrement studio Bruxelles - Captation professionnelle avec rushs bruts',
     },
     {
-      title: 'Rec + montage',
-      description: 'Solution clé en main : enregistrement, montage professionnel et formats courts prêts à publier.',
-      features: ['Tournage complet', 'Montage expert', 'Formats courts inclus'],
+      title: 'REC + MONTAGE',
+      description: 'Tournage + montage complet pris en charge par notre équipe',
+      features: [
+        '2 formats courts (shorts) inclus pour les réseaux sociaux',
+        '1 modification incluse pour ajuster le rendu final',
+        'Idéal pour un podcast clé en main, sans effort'
+      ],
       image: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&q=80',
-      alt: 'Studio enregistrement et montage Bruxelles - Production complète vidéo podcast clé en main',
+      alt: 'Studio enregistrement et montage Bruxelles - Production complète clé en main',
+    },
+    {
+      title: 'SESSION VIP',
+      description: 'Un accompagnement personnalisé pour un contenu percutant et professionnel',
+      features: [
+        'Appel découverte pour définir vos objectifs et sujets',
+        'Préparation complète du podcast (thèmes + questions)',
+        'Tournage de 1h30 dans notre studio premium',
+        'Interviewer qualifié dédié pour structurer et dynamiser la discussion',
+        'Montage simple inclus + 5 shorts offerts pour réseaux sociaux'
+      ],
+      image: '/photo/AS STUDIOS-20.JPG',
+      alt: 'Session VIP podcast Bruxelles - Accompagnement complet avec interviewer professionnel',
     },
   ];
 
   const reasons = [
     {
-      title: 'Équipements Premium',
-      description: 'Micros Shure, éclairages professionnels, caméras 4K et table de mixage.',
-      icon: 'microphone',
-    },
-    {
-      title: 'Accompagnement Expert',
-      description: 'Support technique et créatif pour optimiser vos productions.',
-      icon: 'users',
+      title: 'Formules Flexibles',
+      description: 'Du studio vide à l\'accompagnement VIP, choisissez selon vos besoins.',
+      icon: 'adjustments',
     },
     {
       title: 'Espaces Modulables',
       description: 'Studios adaptables à tous vos besoins : podcast, vidéo, photo.',
-      icon: 'adjustments',
+      icon: 'microphone',
+    },
+    {
+      title: 'Équipe Créative',
+      description: 'Cadreurs, monteurs et interviewers qualifiés pour vos projets.',
+      icon: 'users',
     },
     {
       title: 'Localisation Idéale',
@@ -240,14 +264,14 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-              3 expériences studio
+              4 expériences studio
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Choisissez la formule qui correspond à vos besoins
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {studioOfferings.map((offering, index) => (
               <motion.div
                 key={offering.title}
@@ -258,14 +282,9 @@ export default function Home() {
                 whileHover={{ y: -8, transition: { duration: 0.3 } }}
                 className="relative group"
               >
-                {offering.popular && (
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10">
-                    <span className="px-4 py-1 rounded-full gradient-primary text-white text-sm font-semibold shadow-lg">
-                      Populaire
-                    </span>
-                  </div>
-                )}
-                <div className={`bg-white rounded-2xl overflow-hidden shadow-lg group-hover:shadow-2xl transition-all duration-300 h-full ${offering.popular ? 'ring-2 ring-[#976EFD]/20' : ''}`}>
+                {/* Gradient border effect */}
+                <div className="absolute -inset-0.5 bg-gradient-to-r from-[#976EFD] via-[#FFDEFC] to-[#976EFD] rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-sm"></div>
+                <div className="relative bg-white rounded-2xl overflow-hidden shadow-lg group-hover:shadow-2xl transition-all duration-300 h-full ring-1 ring-gray-100">
                   <div className="relative h-64 overflow-hidden">
                     <Image
                       src={offering.image}
