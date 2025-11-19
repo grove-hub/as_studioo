@@ -12,7 +12,7 @@ export default function JsonLd() {
     image: 'https://as-studio.be/og-image.jpg',
     '@id': 'https://as-studio.be',
     url: 'https://as-studio.be',
-    telephone: '+32486167825',
+    telephone: '+32470078377',
     priceRange: 'Sur devis',
     address: {
       '@type': 'PostalAddress',
@@ -79,7 +79,7 @@ export default function JsonLd() {
     },
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+32486167825',
+      telephone: '+32470078377',
       contactType: 'customer service',
       areaServed: 'BE',
       availableLanguage: ['French', 'English'],

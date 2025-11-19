@@ -76,8 +76,8 @@ export default function ContactPage() {
       ),
       title: 'Téléphone',
       content: (
-        <a href="tel:+32486167825" className="hover:text-[#976EFD] transition-colors">
-          0486 16 78 25
+        <a href="tel:+32470078377" className="hover:text-[#976EFD] transition-colors">
+          0470 07 83 77
         </a>
       ),
     },
@@ -414,10 +414,10 @@ export default function ContactPage() {
               N'hésitez pas à nous appeler directement pour toute question. Notre équipe se fera un plaisir de vous renseigner.
             </p>
             <a
-              href="tel:+32486167825"
+              href="tel:+32470078377"
               className="inline-block px-10 py-5 rounded-full gradient-primary text-white font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              📞 Appelez-nous : 0486 16 78 25
+              📞 Appelez-nous : 0470 07 83 77
             </a>
           </motion.div>
         </div>

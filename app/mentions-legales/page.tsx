@@ -40,7 +40,7 @@ export default function MentionsLegalesPage() {
               <strong>AS Studios</strong><br />
               Chaussée de Wavre 1259<br />
               1160 Auderghem, Belgique<br />
-              Téléphone : <a href="tel:+32486167825">0486 16 78 25</a>
+              Téléphone : <a href="tel:+32470078377">0470 07 83 77</a>
             </p>
 
             <h2>Hébergement</h2>
