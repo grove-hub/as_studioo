@@ -1,11 +1,10 @@
 'use client';
 
-import React from 'react';
+import { AdjustmentsIcon, BriefcaseIcon, LocationIcon, MicrophoneIcon, MusicIcon, SparklesIcon, TargetIcon, UsersIcon, VideoIcon } from '@/components/Icons';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import Button from '@/components/Button';
-import { MicrophoneIcon, UsersIcon, AdjustmentsIcon, LocationIcon, SparklesIcon, VideoIcon, BriefcaseIcon, TargetIcon, MusicIcon } from '@/components/Icons';
+import React from 'react';
 
 /**
  * Home Page
@@ -217,7 +216,7 @@ export default function Home() {
           >
             <div className="relative rounded-3xl overflow-hidden shadow-2xl max-w-5xl mx-auto">
               <Image
-                src="/photo/as studio-6.jpg"
+                src="/photo/AS-STUDIOS-6.JPG"
                 alt="Studio professionnel AS Studio à Bruxelles - Équipements podcast, vidéo et photo premium à Auderghem"
                 width={1400}
                 height={800}
