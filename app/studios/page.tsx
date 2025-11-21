@@ -34,7 +34,7 @@ export default function StudiosPage() {
       title: 'Studio Vidéo',
       tagline: 'Créez du contenu qui marque',
       description: 'Studio vidéo complet avec éclairages cinématographiques et caméras 4K. Parfait pour YouTube, formations, interviews vidéo et contenus professionnels.',
-      image: '/photo/studio-1.JPG',
+      image: '/photo/studio-video2-0.jpg',
       alt: 'Studio vidéo professionnel Bruxelles - Caméras 4K, éclairages LED et équipements YouTube à Auderghem',
       features: [
         'Caméras 4K professionnelles',
@@ -56,7 +56,7 @@ export default function StudiosPage() {
       image: '/photo/eclairage-led.JPG',
       alt: 'Studio photo professionnel Bruxelles - Cyclorama, éclairages LED et équipements portrait produit à Auderghem',
       features: [
-        'Cyclorama blanc professionnel',
+        'Cyclorama blanc professionnel (25m²)',
         'Fonds colorés disponibles',
         'Éclairages continus et flash',
         'Réflecteurs et diffuseurs',

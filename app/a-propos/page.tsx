@@ -12,7 +12,6 @@ import Link from 'next/link';
  */
 
 export default function AboutPage() {
-  const [flippedCard, setFlippedCard] = React.useState<number | null>(null);
 
   // Helper function to render icons
   const renderIcon = (iconName: string, className: string = "w-12 h-12") => {
@@ -177,61 +176,72 @@ export default function AboutPage() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {teamMembers.map((member, index) => (
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {teamMembers.slice(0, -1).map((member, index) => (
               <motion.div
                 key={member.name}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="relative h-80 cursor-pointer perspective-1000"
-                onClick={() => setFlippedCard(flippedCard === index ? null : index)}
+                whileHover={{ y: -8, scale: 1.02 }}
+                className="group"
               >
-                <motion.div
-                  animate={{ rotateY: flippedCard === index ? 180 : 0 }}
-                  transition={{ duration: 0.6, ease: 'easeInOut' }}
-                  className="relative w-full h-full preserve-3d"
-                  style={{ transformStyle: 'preserve-3d' }}
-                >
-                  {/* Front */}
-                  <div
-                    className="absolute inset-0 backface-hidden rounded-xl shadow-lg p-6 bg-gradient-to-br from-white via-purple-50/30 to-rose-50/20 border border-gray-100 flex flex-col justify-center items-center"
-                    style={{ backfaceVisibility: 'hidden' }}
-                  >
-                    <div className="text-center">
-                      <p className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-2">
-                        {member.specialty ? `${member.role} • ${member.specialty}` : member.role}
+                <div className="relative h-80 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                  <Image
+                    src={member.image}
+                    alt={`${member.name} - ${member.specialty ? `${member.role} ${member.specialty}` : member.role} AS Studios`}
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                    <h3 className="text-2xl font-bold mb-2">{member.name}</h3>
+                    <p className="text-sm font-semibold opacity-90">
+                      {member.role}
+                    </p>
+                    {member.specialty && (
+                      <p className="text-xs opacity-75 mt-1">
+                        {member.specialty}
                       </p>
-                      <h3 className="text-4xl font-bold gradient-text mb-4">
-                        {member.name}
-                      </h3>
-                      <p className="text-sm text-gray-400">
-                        Cliquez pour voir la photo
-                      </p>
-                    </div>
+                    )}
                   </div>
-
-                  {/* Back */}
-                  <div
-                    className="absolute inset-0 backface-hidden rounded-xl shadow-lg overflow-hidden"
-                    style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}
-                  >
-                    <Image
-                      src={member.image}
-                      alt={`${member.name} - ${member.specialty ? `${member.role} ${member.specialty}` : member.role} AS Studios`}
-                      fill
-                      className="object-cover"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
-                    <div className="absolute bottom-6 left-6 right-6 text-white">
-                      <h3 className="text-2xl font-bold mb-1">{member.name}</h3>
-                      <p className="text-sm opacity-90">{member.specialty ? `${member.role} • ${member.specialty}` : member.role}</p>
-                    </div>
-                  </div>
-                </motion.div>
+                </div>
               </motion.div>
             ))}
+          </div>
+
+          {/* Pippa centered */}
+          <div className="flex justify-center mt-6">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.8 }}
+              whileHover={{ y: -8, scale: 1.02 }}
+              className="group w-full max-w-xs"
+            >
+              <div className="relative h-80 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                <Image
+                  src={teamMembers[teamMembers.length - 1].image}
+                  alt={`${teamMembers[teamMembers.length - 1].name} - ${teamMembers[teamMembers.length - 1].specialty ? `${teamMembers[teamMembers.length - 1].role} ${teamMembers[teamMembers.length - 1].specialty}` : teamMembers[teamMembers.length - 1].role} AS Studios`}
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                  <h3 className="text-2xl font-bold mb-2">{teamMembers[teamMembers.length - 1].name}</h3>
+                  <p className="text-sm font-semibold opacity-90">
+                    {teamMembers[teamMembers.length - 1].role}
+                  </p>
+                  {teamMembers[teamMembers.length - 1].specialty && (
+                    <p className="text-xs opacity-75 mt-1">
+                      {teamMembers[teamMembers.length - 1].specialty}
+                    </p>
+                  )}
+                </div>
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>

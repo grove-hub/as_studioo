@@ -69,8 +69,8 @@ export default function Home() {
         'Appel découverte pour définir vos objectifs et sujets',
         'Préparation complète du podcast (thèmes + questions)',
         'Tournage de 1h30 dans notre studio premium',
-        'Interviewer qualifié dédié pour structurer et dynamiser la discussion',
-        'Montage simple inclus + 5 shorts offerts pour réseaux sociaux'
+        'Accompagnement assuré par un professionnel pour guider et dynamiser l\'échange',
+        'Montage simple inclus + 3 shorts offerts pour réseaux sociaux'
       ],
       image: '/photo/AS STUDIOS-20.JPG',
       alt: 'Session VIP podcast Bruxelles - Accompagnement complet avec interviewer professionnel',
