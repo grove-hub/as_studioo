@@ -268,6 +268,8 @@ export default function Home() {
                       width={400}
                       height={300}
                       className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
+                      priority={index < 2}
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                     <h3 className="absolute bottom-4 left-6 text-2xl font-bold text-white">
@@ -373,6 +375,8 @@ export default function Home() {
                     width={300}
                     height={300}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    loading="lazy"
+                    sizes="(max-width: 768px) 50vw, 25vw"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 </div>

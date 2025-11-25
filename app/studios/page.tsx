@@ -166,6 +166,8 @@ export default function StudiosPage() {
                     width={800}
                     height={600}
                     className="w-full h-auto"
+                    priority={index === 0}
+                    sizes="(max-width: 1024px) 100vw, 50vw"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                 </div>
