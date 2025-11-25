@@ -153,11 +153,11 @@ export default function StudiosPage() {
             <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
               {/* Image */}
               <motion.div
-                initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
+                initial={{ opacity: index === 0 ? 1 : 0, x: index === 0 ? 0 : (index % 2 === 0 ? -50 : 50) }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.8 }}
-                className={`${index % 2 === 1 ? 'lg:order-2' : ''}`}
+                transition={{ duration: index === 0 ? 0 : 0.8 }}
+                className={`${index % 2 === 1 ? 'lg:order-2' : ''} ${index === 0 ? 'lg:opacity-100 lg:translate-x-0' : ''}`}
               >
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                   <Image
@@ -175,10 +175,10 @@ export default function StudiosPage() {
 
               {/* Content */}
               <motion.div
-                initial={{ opacity: 0, x: index % 2 === 0 ? 50 : -50 }}
+                initial={{ opacity: index === 0 ? 1 : 0, x: index === 0 ? 0 : (index % 2 === 0 ? 50 : -50) }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: 0.2 }}
+                transition={{ duration: index === 0 ? 0 : 0.8, delay: index === 0 ? 0 : 0.2 }}
                 className={`${index % 2 === 1 ? 'lg:order-1' : ''}`}
               >
                 <h2 className="text-4xl font-bold text-gray-900 mb-3">
