@@ -37,7 +37,7 @@ export default function Home() {
         'Idéal pour les créateurs équipés et indépendants',
         'Créez votre contenu en toute liberté, dans un espace pro'
       ],
-      image: '/photo/studio-vide.JPG',
+      image: '/photo/studio-vide.webp',
       alt: 'Location studio vide Bruxelles - Espace pour créateurs avec leur propre matériel',
     },
     {
@@ -48,7 +48,7 @@ export default function Home() {
         'Vous gardez la main sur le montage et la diffusion',
         'Parfait pour ceux qui veulent un tournage pro sans post-prod'
       ],
-      image: '/photo/rec-rush.JPG',
+      image: '/photo/rec-rush.webp',
       alt: 'Enregistrement studio Bruxelles - Captation professionnelle avec rushs bruts',
     },
     {
@@ -72,7 +72,7 @@ export default function Home() {
         'Accompagnement assuré par un professionnel pour guider et dynamiser l\'échange',
         'Montage simple inclus + 3 shorts offerts pour réseaux sociaux'
       ],
-      image: '/photo/AS STUDIOS-20.JPG',
+      image: '/photo/AS-STUDIOS-20.webp',
       alt: 'Session VIP podcast Bruxelles - Accompagnement complet avec interviewer professionnel',
     },
   ];
@@ -113,17 +113,17 @@ export default function Home() {
     },
     {
       name: 'Éclairages LED professionnels',
-      image: '/photo/eclairage-led.JPG',
+      image: '/photo/eclairage-led.webp',
       alt: 'Éclairage LED professionnel studio vidéo photo cinématographique à Bruxelles Auderghem'
     },
     {
       name: 'Caméras 4K',
-      image: '/photo/sony.jpg',
+      image: '/photo/sony.webp',
       alt: 'Caméras 4K professionnelles pour production vidéo haute qualité studio Bruxelles'
     },
     {
       name: 'Table de mixage',
-      image: '/photo/rec-rush.JPG',
+      image: '/photo/rec-rush.webp',
       alt: 'Table de mixage audio professionnelle pour enregistrement podcast et musique Bruxelles'
     },
   ];
@@ -216,7 +216,7 @@ export default function Home() {
           >
             <div className="relative rounded-3xl overflow-hidden shadow-2xl max-w-5xl mx-auto">
               <Image
-                src="/photo/AS-STUDIOS-6.JPG"
+                src="/photo/AS-STUDIOS-6.webp"
                 alt="Studio professionnel AS Studio à Bruxelles - Équipements podcast, vidéo et photo premium à Auderghem"
                 width={1400}
                 height={800}
