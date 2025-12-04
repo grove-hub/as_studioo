@@ -108,7 +108,7 @@ export default function Home() {
   const equipment = [
     {
       name: 'Microphones Shure SM7B',
-      image: '/photo/microphone-shure.JPG',
+      image: '/photo/microphone-shure.webp',
       alt: 'Microphone Shure SM7B professionnel pour enregistrement podcast et voix-off au studio AS Studio Bruxelles'
     },
     {
@@ -222,6 +222,8 @@ export default function Home() {
                 height={800}
                 className="w-full h-auto"
                 priority
+                fetchPriority="high"
+                sizes="(max-width: 1280px) 100vw, 1280px"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
             </div>

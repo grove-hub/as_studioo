@@ -17,7 +17,7 @@ export default function StudiosPage() {
       title: 'Studio Podcast',
       tagline: 'Votre voix, amplifiée',
       description: 'Un espace acoustiquement traité pour des enregistrements audio d\'une clarté exceptionnelle. Idéal pour podcasts, interviews, et contenus audio.',
-      image: '/photo/microphone-shure.JPG',
+      image: '/photo/microphone-shure.webp',
       alt: 'Studio podcast professionnel Bruxelles - Microphones Shure SM7B et équipement audio premium à Auderghem',
       features: [
         'Microphones Shure SM7B professionnels',

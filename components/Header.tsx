@@ -46,7 +46,7 @@ export default function Header() {
         animate={{ y: 0 }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled ? 'bg-white/90 backdrop-blur-lg shadow-lg' : 'bg-white/50 backdrop-blur-sm'
+          scrolled ? 'bg-white/95 backdrop-blur-lg shadow-lg' : 'bg-white/80 backdrop-blur-sm'
         }`}
       >
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -58,12 +58,13 @@ export default function Header() {
             >
               <Link href="/" className="flex items-center space-x-3">
                 <Image
-                  src="/logo.png"
+                  src="/logo.webp"
                   alt="AS Studios logo"
                   width={150}
                   height={40}
                   className="h-18 w-auto"
                   priority
+                  sizes="150px"
                 />
               </Link>
             </motion.div>
@@ -79,8 +80,8 @@ export default function Header() {
                 >
                   <Link
                     href={link.href}
-                    className={`relative text-sm font-medium transition-colors hover:text-[#976EFD] ${
-                      isActive(link.href) ? 'text-[#976EFD]' : 'text-gray-700'
+                    className={`relative text-sm font-semibold transition-colors hover:text-[#7B5CD6] ${
+                      isActive(link.href) ? 'text-[#7B5CD6]' : 'text-gray-900'
                     }`}
                   >
                     {link.label}

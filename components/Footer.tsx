@@ -57,11 +57,12 @@ export default function Footer() {
           >
             <Link href="/" className="group">
               <Image
-                src="/logo.png"
+                src="/logo.webp"
                 alt="AS Studios logo"
                 width={150}
                 height={40}
                 className="h-12 w-auto group-hover:scale-105 transition-transform"
+                sizes="150px"
               />
             </Link>
             <p className="text-gray-600 text-sm leading-relaxed">
