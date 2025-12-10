@@ -128,10 +128,10 @@ export default function StudiosPage() {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-5xl sm:text-6xl font-bold text-gray-900 mb-6">
-              Nos <span className="gradient-text">Studios</span>
+              Studios <span className="gradient-text">Podcast Bruxelles</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-              Des espaces professionnels pensés pour donner vie à vos projets créatifs. Podcast, vidéo, photo : tout est réuni pour des productions de qualité.
+              Location de studio d&apos;enregistrement podcast, vidéo et photo à Auderghem. Équipement professionnel Shure SM7B, caméras 4K et isolation acoustique pour des productions de qualité.
             </p>
             <Link
               href="/contact"
@@ -244,10 +244,10 @@ export default function StudiosPage() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-              Choisissez votre formule
+              Formules location studio podcast
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Trois options adaptées à vos besoins et votre niveau d'autonomie
+              Du studio vide à l&apos;enregistrement avec montage inclus : choisissez la formule adaptée à votre projet podcast
             </p>
           </motion.div>
 
@@ -327,10 +327,10 @@ export default function StudiosPage() {
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-              Des questions sur nos studios ?
+              Réservez votre studio podcast à Bruxelles
             </h2>
             <p className="text-xl text-white/90 mb-10">
-              Contactez-nous pour discuter de votre projet et recevoir une proposition personnalisée.
+              Contactez-nous pour réserver votre session d&apos;enregistrement et recevoir un devis personnalisé gratuit.
             </p>
             <Link
               href="/contact"

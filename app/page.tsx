@@ -179,8 +179,8 @@ export default function Home() {
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.2 }}
             >
-              Votre studio,{' '}
-              <span className="gradient-text">votre créativité.</span>
+              Studio Podcast{' '}
+              <span className="gradient-text">Bruxelles</span>
             </motion.h1>
 
             <motion.p
@@ -189,7 +189,7 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              Studios de podcast, vidéo et photo à Bruxelles, pensés pour les créateurs modernes.
+              Location de studio d&apos;enregistrement podcast, vidéo et photo à Bruxelles. Équipement professionnel et accompagnement sur mesure.
             </motion.p>
 
             <motion.div
@@ -242,10 +242,10 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-              4 expériences studio
+              Location Studio Podcast Bruxelles
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Choisissez la formule qui correspond à vos besoins
+              4 formules d&apos;enregistrement podcast adaptées à vos besoins : du studio vide à l&apos;accompagnement complet
             </p>
           </motion.div>
 
@@ -315,7 +315,7 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-              5 raisons de choisir AS Studios
+              Pourquoi choisir notre studio podcast à Bruxelles ?
             </h2>
           </motion.div>
 
@@ -352,10 +352,10 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-              Équipements premium inclus
+              Équipement podcast professionnel
             </h2>
             <p className="text-xl text-gray-600">
-              Du matériel professionnel pour des productions de qualité
+              Microphones Shure SM7B, table de mixage RØDECaster, caméras 4K et éclairages LED inclus dans votre location
             </p>
           </motion.div>
 
@@ -400,10 +400,10 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-              Pour qui ?
+              Studio podcast pour tous les créateurs
             </h2>
             <p className="text-xl text-gray-600">
-              Des studios adaptés à tous les créateurs
+              Notre studio d&apos;enregistrement à Bruxelles accueille podcasteurs, YouTubeurs, entreprises et agences
             </p>
           </motion.div>
 
@@ -452,10 +452,10 @@ export default function Home() {
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-              Prêt à créer votre prochain contenu ?
+              Réservez votre studio podcast à Bruxelles
             </h2>
             <p className="text-xl text-white/90 mb-10">
-              Réservez dès maintenant votre session studio et donnez vie à vos idées.
+              Enregistrez votre podcast dans notre studio professionnel à Auderghem. Devis gratuit et personnalisé.
             </p>
             <Link
               href="/contact"

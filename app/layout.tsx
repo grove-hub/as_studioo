@@ -18,27 +18,52 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.as-studios.be"),
   title: {
-    default: "AS Studios - Studios de création à Bruxelles | Podcast, Vidéo, Photo",
-    template: "%s | AS Studios",
+    default: "Studio Podcast Bruxelles | Location Studio Enregistrement | AS Studios",
+    template: "%s | AS Studios Bruxelles",
   },
-  description: "Studios de podcast, vidéo et photo à Bruxelles. Formules flexibles du studio vide à l'accompagnement VIP. Espaces modulables pour créateurs, marques et agences.",
+  description: "Studio podcast professionnel à Bruxelles. Location studio d'enregistrement podcast, vidéo et photo. Microphones Shure SM7B, équipement 4K, accompagnement clé en main. Réservez votre session à Auderghem.",
   keywords: [
+    // Mots-clés principaux podcast
     "studio podcast bruxelles",
+    "location studio podcast bruxelles",
+    "studio enregistrement podcast bruxelles",
+    "enregistrer podcast bruxelles",
+    "studio podcast belgique",
+    "louer studio podcast",
+    "studio podcast professionnel bruxelles",
+    "enregistrement podcast professionnel",
+    // Mots-clés vidéo
     "studio vidéo bruxelles",
+    "studio youtube bruxelles",
+    "tournage vidéo bruxelles",
+    "studio streaming bruxelles",
+    // Mots-clés photo
     "studio photo bruxelles",
+    "studio photo professionnel bruxelles",
+    // Localisation
+    "studio auderghem",
+    "studio création bruxelles",
     "location studio bruxelles",
-    "studio enregistrement bruxelles",
-    "studio création auderghem",
-    "podcast bruxelles",
-    "production vidéo bruxelles",
-    "studio photo professionnel",
+    // Services
+    "enregistrement audio bruxelles",
+    "production podcast belgique",
+    "montage podcast bruxelles",
+    "podcast clé en main bruxelles",
+    // Équipements
+    "studio shure sm7b bruxelles",
+    "studio rodecaster bruxelles",
+    "studio 4k bruxelles",
   ],
   authors: [{ name: "AS Studios" }],
   creator: "AS Studios",
   publisher: "AS Studios",
   formatDetection: {
     telephone: false,
+  },
+  alternates: {
+    canonical: "https://www.as-studios.be",
   },
   icons: {
     icon: [
@@ -56,25 +81,24 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "fr_BE",
-    url: "https://as-studio.be",
-    title: "AS Studios - Studios de création à Bruxelles",
-    description: "Studios de podcast, vidéo et photo pensés pour les créateurs modernes",
+    url: "https://www.as-studios.be",
+    title: "Studio Podcast Bruxelles | Location & Enregistrement | AS Studios",
+    description: "Studio podcast professionnel à Bruxelles. Location studio d'enregistrement avec équipement premium Shure SM7B, caméras 4K. Formules flexibles : studio vide, tournage, montage inclus.",
     siteName: "AS Studios",
     images: [
       {
-        url: "/logo.png",
-        width: 1200,
-        height: 630,
-        alt: "AS Studios - Studios de création à Bruxelles",
+        url: "/photo/AS-STUDIOS-6.webp",
+        width: 1400,
+        height: 800,
+        alt: "Studio podcast professionnel AS Studios à Bruxelles - Équipement premium pour enregistrement audio et vidéo",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "AS Studios - Studios de création à Bruxelles",
-    description: "Studios de podcast, vidéo et photo pensés pour les créateurs modernes",
-    creator: "@AS Studios",
-    images: ["/logo.png"],
+    title: "Studio Podcast Bruxelles | AS Studios",
+    description: "Studio podcast professionnel à Bruxelles. Location studio d'enregistrement, tournage vidéo, accompagnement clé en main.",
+    images: ["/photo/AS-STUDIOS-6.webp"],
   },
   robots: {
     index: true,
@@ -86,6 +110,9 @@ export const metadata: Metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
+  },
+  verification: {
+    google: "votre-code-verification-google",
   },
 };
 
