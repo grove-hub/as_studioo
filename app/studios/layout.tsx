@@ -18,12 +18,12 @@ export const metadata: Metadata = {
     "studio cyclorama bruxelles",
   ],
   alternates: {
-    canonical: "https://www.as-studios.be/studios",
+    canonical: "https://www.as-studio.be/studios",
   },
   openGraph: {
     title: "Studios Podcast, Vidéo & Photo | AS Studios Bruxelles",
     description: "Location studio podcast professionnel à Bruxelles. Équipement Shure SM7B, caméras 4K, isolation acoustique. Formules flexibles.",
-    url: "https://www.as-studios.be/studios",
+    url: "https://www.as-studio.be/studios",
     images: [
       {
         url: "/photo/microphone-shure.webp",

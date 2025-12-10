@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.as-studios.be"),
+  metadataBase: new URL("https://www.as-studio.be"),
   title: {
     default: "Studio Podcast Bruxelles | Location Studio Enregistrement | AS Studios",
     template: "%s | AS Studios Bruxelles",
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     telephone: false,
   },
   alternates: {
-    canonical: "https://www.as-studios.be",
+    canonical: "https://www.as-studio.be",
   },
   icons: {
     icon: [
@@ -81,7 +81,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "fr_BE",
-    url: "https://www.as-studios.be",
+    url: "https://www.as-studio.be",
     title: "Studio Podcast Bruxelles | Location & Enregistrement | AS Studios",
     description: "Studio podcast professionnel à Bruxelles. Location studio d'enregistrement avec équipement premium Shure SM7B, caméras 4K. Formules flexibles : studio vide, tournage, montage inclus.",
     siteName: "AS Studios",
