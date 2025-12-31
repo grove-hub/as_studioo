@@ -1,10 +1,10 @@
 'use client';
 
-import React from 'react';
+import { AdjustmentsIcon, GlobeIcon, HandshakeIcon, LightbulbIcon, SparklesIcon, TrendingIcon } from '@/components/Icons';
 import { motion } from 'framer-motion';
-import { HandshakeIcon, TrendingIcon, LightbulbIcon, GlobeIcon, SparklesIcon, AdjustmentsIcon } from '@/components/Icons';
 import Image from 'next/image';
 import Link from 'next/link';
+import React from 'react';
 
 /**
  * About Page (À propos)
@@ -115,7 +115,7 @@ export default function AboutPage() {
       name: 'Pippa',
       role: 'Mascotte',
       specialty: '🐾',
-      image: '/equipe/pippa.webp',
+      image: '/equipe/pippa.png',
     },
   ];
 
