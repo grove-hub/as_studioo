@@ -97,18 +97,13 @@ export default function AboutPage() {
       role: 'Réalisateur',
       specialty: 'Cadreur • Monteur',
       image: '/equipe/thomas.webp',
+      objectPosition: 'top',
     },
     {
       name: 'Maxime',
       role: 'Cadreur',
       specialty: 'Monteur',
       image: '/equipe/maxime.webp',
-    },
-    {
-      name: 'Antoine',
-      role: 'Cadreur',
-      specialty: 'Monteur',
-      image: '/equipe/antoine.webp',
     },
     {
       name: 'Bastien',
@@ -176,8 +171,9 @@ export default function AboutPage() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {teamMembers.slice(0, -1).map((member, index) => (
+          {/* Fondateurs - 2 colonnes centrées */}
+          <div className="flex justify-center gap-6 mb-6">
+            {teamMembers.slice(0, 2).map((member, index) => (
               <motion.div
                 key={member.name}
                 initial={{ opacity: 0, y: 30 }}
@@ -185,16 +181,17 @@ export default function AboutPage() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 whileHover={{ y: -8, scale: 1.02 }}
-                className="group"
+                className="group w-full max-w-sm"
               >
-                <div className="relative h-80 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                <div className="relative h-96 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
                   <Image
                     src={member.image}
                     alt={`${member.name} - ${member.specialty ? `${member.role} ${member.specialty}` : member.role} AS Studios`}
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
-                    priority={index < 4}
-                    sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                    style={{ objectPosition: member.objectPosition || 'center' }}
+                    priority
+                    sizes="(max-width: 768px) 50vw, 384px"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
@@ -213,39 +210,82 @@ export default function AboutPage() {
             ))}
           </div>
 
-          {/* Pippa centered */}
-          <div className="flex justify-center mt-6">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.8 }}
-              whileHover={{ y: -8, scale: 1.02 }}
-              className="group w-full max-w-xs"
-            >
-              <div className="relative h-80 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
-                <Image
-                  src={teamMembers[teamMembers.length - 1].image}
-                  alt={`${teamMembers[teamMembers.length - 1].name} - ${teamMembers[teamMembers.length - 1].specialty ? `${teamMembers[teamMembers.length - 1].role} ${teamMembers[teamMembers.length - 1].specialty}` : teamMembers[teamMembers.length - 1].role} AS Studios`}
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
-                  loading="lazy"
-                  sizes="(max-width: 768px) 100vw, 384px"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                  <h3 className="text-2xl font-bold mb-2">{teamMembers[teamMembers.length - 1].name}</h3>
-                  <p className="text-sm font-semibold opacity-90">
-                    {teamMembers[teamMembers.length - 1].role}
-                  </p>
-                  {teamMembers[teamMembers.length - 1].specialty && (
-                    <p className="text-xs opacity-75 mt-1">
-                      {teamMembers[teamMembers.length - 1].specialty}
+          {/* Équipe - 4 colonnes */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-6">
+            {teamMembers.slice(2, 6).map((member, index) => (
+              <motion.div
+                key={member.name}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: (index + 2) * 0.1 }}
+                whileHover={{ y: -8, scale: 1.02 }}
+                className="group"
+              >
+                <div className="relative h-80 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                  <Image
+                    src={member.image}
+                    alt={`${member.name} - ${member.specialty ? `${member.role} ${member.specialty}` : member.role} AS Studios`}
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    style={{ objectPosition: member.objectPosition || 'center' }}
+                    priority={index < 2}
+                    sizes="(max-width: 768px) 50vw, 25vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                    <h3 className="text-2xl font-bold mb-2">{member.name}</h3>
+                    <p className="text-sm font-semibold opacity-90">
+                      {member.role}
                     </p>
-                  )}
+                    {member.specialty && (
+                      <p className="text-xs opacity-75 mt-1">
+                        {member.specialty}
+                      </p>
+                    )}
+                  </div>
                 </div>
-              </div>
-            </motion.div>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Bastien + Pippa - centrés */}
+          <div className="flex justify-center gap-6">
+            {teamMembers.slice(6).map((member, index) => (
+              <motion.div
+                key={member.name}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: (index + 6) * 0.1 }}
+                whileHover={{ y: -8, scale: 1.02 }}
+                className="group w-full max-w-xs"
+              >
+                <div className="relative h-80 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                  <Image
+                    src={member.image}
+                    alt={`${member.name} - ${member.specialty ? `${member.role} ${member.specialty}` : member.role} AS Studios`}
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    style={{ objectPosition: member.objectPosition || 'center' }}
+                    loading="lazy"
+                    sizes="(max-width: 768px) 50vw, 320px"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                    <h3 className="text-2xl font-bold mb-2">{member.name}</h3>
+                    <p className="text-sm font-semibold opacity-90">
+                      {member.role}
+                    </p>
+                    {member.specialty && (
+                      <p className="text-xs opacity-75 mt-1">
+                        {member.specialty}
+                      </p>
+                    )}
+                  </div>
+                </div>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
