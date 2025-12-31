@@ -154,25 +154,25 @@ export default function AboutPage() {
       </section>
 
       {/* Team Section */}
-      <section className="py-24 bg-white">
+      <section className="py-12 sm:py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="text-center mb-12"
+            className="text-center mb-8 sm:mb-12"
           >
-            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
               L'équipe AS Studios
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-base sm:text-lg md:text-xl text-gray-600">
               Passionnés de création et de technologie
             </p>
           </motion.div>
 
           {/* Fondateurs - 2 colonnes centrées */}
-          <div className="flex justify-center gap-6 mb-6">
+          <div className="grid grid-cols-2 gap-3 sm:gap-4 md:gap-6 mb-3 sm:mb-4 md:mb-6 max-w-3xl mx-auto">
             {teamMembers.slice(0, 2).map((member, index) => (
               <motion.div
                 key={member.name}
@@ -181,9 +181,10 @@ export default function AboutPage() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 whileHover={{ y: -8, scale: 1.02 }}
-                className="group w-full max-w-sm"
+                whileTap={{ scale: 0.98 }}
+                className="group"
               >
-                <div className="relative h-96 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                <div className="relative aspect-[3/4] sm:aspect-[3/4] md:h-96 rounded-xl sm:rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl active:shadow-xl transition-all duration-300">
                   <Image
                     src={member.image}
                     alt={`${member.name} - ${member.specialty ? `${member.role} ${member.specialty}` : member.role} AS Studios`}
@@ -191,16 +192,16 @@ export default function AboutPage() {
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                     style={{ objectPosition: member.objectPosition || 'center' }}
                     priority
-                    sizes="(max-width: 768px) 50vw, 384px"
+                    sizes="(max-width: 640px) 45vw, (max-width: 768px) 50vw, 384px"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
-                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                    <h3 className="text-2xl font-bold mb-2">{member.name}</h3>
-                    <p className="text-sm font-semibold opacity-90">
+                  <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4 md:p-6 text-white">
+                    <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-0.5 sm:mb-1 md:mb-2">{member.name}</h3>
+                    <p className="text-xs sm:text-sm font-semibold opacity-90">
                       {member.role}
                     </p>
                     {member.specialty && (
-                      <p className="text-xs opacity-75 mt-1">
+                      <p className="text-[10px] sm:text-xs opacity-75 mt-0.5 sm:mt-1">
                         {member.specialty}
                       </p>
                     )}
@@ -210,8 +211,8 @@ export default function AboutPage() {
             ))}
           </div>
 
-          {/* Équipe - 4 colonnes */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-6">
+          {/* Équipe - 4 colonnes (2 on mobile) */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-6 mb-3 sm:mb-4 md:mb-6">
             {teamMembers.slice(2, 6).map((member, index) => (
               <motion.div
                 key={member.name}
@@ -220,9 +221,10 @@ export default function AboutPage() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: (index + 2) * 0.1 }}
                 whileHover={{ y: -8, scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
                 className="group"
               >
-                <div className="relative h-80 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                <div className="relative aspect-[3/4] sm:aspect-[3/4] md:h-80 rounded-xl sm:rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl active:shadow-xl transition-all duration-300">
                   <Image
                     src={member.image}
                     alt={`${member.name} - ${member.specialty ? `${member.role} ${member.specialty}` : member.role} AS Studios`}
@@ -230,16 +232,16 @@ export default function AboutPage() {
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                     style={{ objectPosition: member.objectPosition || 'center' }}
                     priority={index < 2}
-                    sizes="(max-width: 768px) 50vw, 25vw"
+                    sizes="(max-width: 640px) 45vw, (max-width: 768px) 50vw, 25vw"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
-                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                    <h3 className="text-2xl font-bold mb-2">{member.name}</h3>
-                    <p className="text-sm font-semibold opacity-90">
+                  <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4 md:p-6 text-white">
+                    <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-0.5 sm:mb-1 md:mb-2">{member.name}</h3>
+                    <p className="text-xs sm:text-sm font-semibold opacity-90">
                       {member.role}
                     </p>
                     {member.specialty && (
-                      <p className="text-xs opacity-75 mt-1">
+                      <p className="text-[10px] sm:text-xs opacity-75 mt-0.5 sm:mt-1">
                         {member.specialty}
                       </p>
                     )}
@@ -250,7 +252,7 @@ export default function AboutPage() {
           </div>
 
           {/* Bastien + Pippa - centrés */}
-          <div className="flex justify-center gap-6">
+          <div className="grid grid-cols-2 gap-3 sm:gap-4 md:gap-6 max-w-xl mx-auto">
             {teamMembers.slice(6).map((member, index) => (
               <motion.div
                 key={member.name}
@@ -259,9 +261,10 @@ export default function AboutPage() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: (index + 6) * 0.1 }}
                 whileHover={{ y: -8, scale: 1.02 }}
-                className="group w-full max-w-xs"
+                whileTap={{ scale: 0.98 }}
+                className="group"
               >
-                <div className="relative h-80 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                <div className="relative aspect-[3/4] sm:aspect-[3/4] md:h-80 rounded-xl sm:rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl active:shadow-xl transition-all duration-300">
                   <Image
                     src={member.image}
                     alt={`${member.name} - ${member.specialty ? `${member.role} ${member.specialty}` : member.role} AS Studios`}
@@ -269,16 +272,16 @@ export default function AboutPage() {
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                     style={{ objectPosition: member.objectPosition || 'center' }}
                     loading="lazy"
-                    sizes="(max-width: 768px) 50vw, 320px"
+                    sizes="(max-width: 640px) 45vw, (max-width: 768px) 50vw, 320px"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
-                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                    <h3 className="text-2xl font-bold mb-2">{member.name}</h3>
-                    <p className="text-sm font-semibold opacity-90">
+                  <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4 md:p-6 text-white">
+                    <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-0.5 sm:mb-1 md:mb-2">{member.name}</h3>
+                    <p className="text-xs sm:text-sm font-semibold opacity-90">
                       {member.role}
                     </p>
                     {member.specialty && (
-                      <p className="text-xs opacity-75 mt-1">
+                      <p className="text-[10px] sm:text-xs opacity-75 mt-0.5 sm:mt-1">
                         {member.specialty}
                       </p>
                     )}
