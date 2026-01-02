@@ -41,88 +41,83 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="relative mt-32 bg-white">
+    <footer className="relative mt-16 sm:mt-32 bg-white">
       {/* Gradient accent line */}
       <div className="h-1 w-full gradient-primary" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-          {/* Logo & Brand */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12">
+          {/* Logo & Brand - Full width on smallest mobile */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="space-y-4"
+            viewport={{ once: true, margin: "-30px" }}
+            transition={{ duration: 0.4 }}
+            className="col-span-2 sm:col-span-1 space-y-3 sm:space-y-4"
           >
-            <Link href="/" className="group">
+            <Link href="/" className="group inline-block">
               <Image
                 src="/logo.webp"
                 alt="AS Studios logo"
                 width={150}
                 height={40}
-                className="h-12 w-auto group-hover:scale-105 transition-transform"
+                className="h-10 sm:h-12 w-auto group-hover:scale-105 transition-transform"
                 sizes="150px"
               />
             </Link>
-            <p className="text-gray-600 text-sm leading-relaxed">
-              Studios de podcast, vidéo et photo à Bruxelles, pensés pour les créateurs modernes.
+            <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
+              Studios de podcast, video et photo a Bruxelles, penses pour les createurs modernes.
             </p>
           </motion.div>
 
           {/* Contact Info */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="space-y-4"
+            viewport={{ once: true, margin: "-30px" }}
+            transition={{ duration: 0.4, delay: 0.05 }}
+            className="space-y-3 sm:space-y-4"
           >
-            <h3 className="text-lg font-semibold text-gray-900">Contact</h3>
-            <div className="space-y-3 text-sm text-gray-600">
-              <div className="flex items-start space-x-3">
-                <svg className="w-5 h-5 mt-0.5 text-[#976EFD] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <h3 className="text-base sm:text-lg font-semibold text-gray-900">Contact</h3>
+            <div className="space-y-2 sm:space-y-3 text-xs sm:text-sm text-gray-600">
+              <div className="flex items-start space-x-2 sm:space-x-3">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 mt-0.5 text-[#976EFD] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
                 <span>Chau. de Wavre 1259<br />1160 Auderghem</span>
               </div>
-              <div className="flex items-center space-x-3">
-                <svg className="w-5 h-5 text-[#976EFD] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <a href="tel:+32470078377" className="flex items-center space-x-2 sm:space-x-3 hover:text-[#976EFD] transition-colors py-1">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 text-[#976EFD] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                <a href="tel:+32470078377" className="hover:text-[#976EFD] transition-colors">
-                  0470 07 83 77
-                </a>
-              </div>
-              <div className="flex items-center space-x-3">
-                <svg className="w-5 h-5 text-[#976EFD] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <span>+32 470 07 83 77</span>
+              </a>
+              <a href="mailto:hello@as-studios.be" className="flex items-center space-x-2 sm:space-x-3 hover:text-[#976EFD] transition-colors py-1">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 text-[#976EFD] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                <a href="mailto:hello@as-studios.be" className="hover:text-[#976EFD] transition-colors">
-                  hello@as-studios.be
-                </a>
-              </div>
+                <span className="break-all">hello@as-studios.be</span>
+              </a>
             </div>
           </motion.div>
 
           {/* Quick Links */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="space-y-4"
+            viewport={{ once: true, margin: "-30px" }}
+            transition={{ duration: 0.4, delay: 0.1 }}
+            className="space-y-3 sm:space-y-4"
           >
-            <h3 className="text-lg font-semibold text-gray-900">Liens rapides</h3>
-            <ul className="space-y-2">
+            <h3 className="text-base sm:text-lg font-semibold text-gray-900">Liens rapides</h3>
+            <ul className="space-y-1 sm:space-y-2">
               {quickLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-gray-600 hover:text-[#976EFD] transition-colors inline-flex items-center group"
+                    className="text-xs sm:text-sm text-gray-600 hover:text-[#976EFD] transition-colors inline-flex items-center py-1.5 sm:py-1"
                   >
-                    <span className="w-0 group-hover:w-2 h-0.5 bg-gradient-to-r from-[#976EFD] to-[#FFDEFC] mr-0 group-hover:mr-2 transition-all duration-300" />
                     {link.label}
                   </Link>
                 </li>
@@ -132,27 +127,25 @@ export default function Footer() {
 
           {/* Social Media */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="space-y-4"
+            viewport={{ once: true, margin: "-30px" }}
+            transition={{ duration: 0.4, delay: 0.15 }}
+            className="space-y-3 sm:space-y-4"
           >
-            <h3 className="text-lg font-semibold text-gray-900">Suivez-nous</h3>
-            <div className="flex space-x-4">
+            <h3 className="text-base sm:text-lg font-semibold text-gray-900">Suivez-nous</h3>
+            <div className="flex space-x-3 sm:space-x-4">
               {socialLinks.map((social) => (
-                <motion.a
+                <a
                   key={social.name}
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  whileHover={{ scale: 1.1, y: -2 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="w-12 h-12 rounded-full bg-gradient-to-br from-[#976EFD] to-[#FFDEFC] flex items-center justify-center text-white shadow-lg hover:shadow-xl transition-shadow"
+                  className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-[#976EFD] to-[#FFDEFC] flex items-center justify-center text-white shadow-md sm:shadow-lg active:scale-95 hover:shadow-xl transition-all"
                   aria-label={social.name}
                 >
                   {social.icon}
-                </motion.a>
+                </a>
               ))}
             </div>
           </motion.div>
@@ -162,15 +155,15 @@ export default function Footer() {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="mt-12 pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0"
+          viewport={{ once: true, margin: "-30px" }}
+          transition={{ duration: 0.4, delay: 0.2 }}
+          className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-gray-200 flex flex-col sm:flex-row justify-between items-center space-y-3 sm:space-y-0"
         >
-          <p className="text-sm text-gray-500">
-            © {currentYear} AS Studios. Tous droits réservés.
+          <p className="text-xs sm:text-sm text-gray-500 text-center sm:text-left">
+            {currentYear} AS Studios. Tous droits reserves.
           </p>
-          <p className="text-sm text-gray-400">
-            Site web développée par <a href="https://pixelin.be" target="_blank" rel="noopener noreferrer" className="hover:text-[#976EFD] transition-colors">pixelin</a>
+          <p className="text-xs sm:text-sm text-gray-400 text-center sm:text-right">
+            Site web developpe par <a href="https://pixelin.be" target="_blank" rel="noopener noreferrer" className="hover:text-[#976EFD] transition-colors">pixelin</a>
           </p>
         </motion.div>
       </div>
