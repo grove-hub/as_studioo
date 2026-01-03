@@ -14,7 +14,7 @@ export default function JsonLd() {
     image: [
       'https://www.as-studio.be/photo/AS-STUDIOS-6.webp',
       'https://www.as-studio.be/photo/microphone-shure.webp',
-      'https://www.as-studio.be/photo/studio-video2-0.webp',
+      'https://www.as-studio.be/photo/studio-videoo.png',
     ],
     url: 'https://www.as-studio.be',
     telephone: '+32470078377',

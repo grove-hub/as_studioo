@@ -145,7 +145,7 @@ export default function ContactPage() {
               Parlons de votre <span className="gradient-text">projet</span>
             </h1>
             <p className="text-base sm:text-xl text-gray-600 max-w-2xl mx-auto px-2">
-              Contactez-nous pour reserver votre session studio ou obtenir plus d'informations. Nous vous recontactons rapidement avec une proposition sur mesure.
+              Contactez-nous pour réserver votre session studio ou obtenir plus d'informations. Nous vous recontactons rapidement avec une proposition sur mesure.
             </p>
           </motion.div>
         </div>
@@ -198,7 +198,7 @@ export default function ContactPage() {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                       <label htmlFor="firstName" className="block text-sm font-semibold text-gray-700 mb-2">
-                        Prenom *
+                        Prénom *
                       </label>
                       <input
                         type="text"
@@ -252,7 +252,7 @@ export default function ContactPage() {
                   {/* Phone */}
                   <div>
                     <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 mb-2">
-                      Telephone *
+                      Téléphone *
                     </label>
                     <input
                       type="tel"
@@ -281,9 +281,9 @@ export default function ContactPage() {
                       required
                       className="w-full px-4 py-3.5 sm:py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#976EFD] focus:border-transparent transition-all text-base appearance-none bg-white bg-[url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23976EFD%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E')] bg-[length:12px] bg-[right_16px_center] bg-no-repeat pr-10"
                     >
-                      <option value="">Selectionnez un type</option>
+                      <option value="">Sélectionnez un type</option>
                       <option value="podcast">Podcast</option>
-                      <option value="video">Video</option>
+                      <option value="video">Vidéo</option>
                       <option value="photo">Photo</option>
                       <option value="autre">Autre</option>
                     </select>
@@ -292,7 +292,7 @@ export default function ContactPage() {
                   {/* Message */}
                   <div>
                     <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-2">
-                      Decrivez votre projet *
+                      Décrivez votre projet *
                     </label>
                     <textarea
                       id="message"
@@ -317,14 +317,14 @@ export default function ContactPage() {
                       className="w-6 h-6 rounded border-gray-300 text-[#976EFD] focus:ring-[#976EFD] mt-0.5 cursor-pointer"
                     />
                     <label htmlFor="wantCallback" className="ml-3 text-sm sm:text-base text-gray-700 cursor-pointer select-none">
-                      Je souhaite etre rappele(e)
+                      Je souhaite être rappelé(e)
                     </label>
                   </div>
 
                   {/* Info Box */}
                   <div className="bg-gradient-to-br from-purple-50 to-rose-50 p-4 rounded-lg">
                     <p className="text-xs sm:text-sm text-gray-700">
-                      <strong>Note :</strong> Nous vous recontactons avec une proposition sur mesure adaptee a votre projet et votre budget. Aucun prix affiche, tout est personnalise.
+                      <strong>Note :</strong> Nous vous recontactons avec une proposition sur mesure adaptée à votre projet et votre budget. Aucun prix affiché, tout est personnalisé.
                     </p>
                   </div>
 
@@ -352,7 +352,7 @@ export default function ContactPage() {
                           <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                         </svg>
                         <div>
-                          <p className="font-semibold text-sm sm:text-base">Message envoye avec succes !</p>
+                          <p className="font-semibold text-sm sm:text-base">Message envoyé avec succès !</p>
                           <p className="text-xs sm:text-sm mt-1">Nous vous recontactons dans les 24h.</p>
                         </div>
                       </div>
@@ -372,7 +372,7 @@ export default function ContactPage() {
                         </svg>
                         <div>
                           <p className="font-semibold text-sm sm:text-base">Erreur lors de l'envoi</p>
-                          <p className="text-xs sm:text-sm mt-1">Veuillez reessayer ou nous contacter par telephone.</p>
+                          <p className="text-xs sm:text-sm mt-1">Veuillez réessayer ou nous contacter par téléphone.</p>
                         </div>
                       </div>
                     </motion.div>
@@ -393,7 +393,7 @@ export default function ContactPage() {
                   Nous trouver
                 </h2>
                 <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6">
-                  On est a Auderghem, facile d'acces en bus ou en voiture.
+                  On est à Auderghem, facile d'accès en bus ou en voiture.
                 </p>
 
                 {/* Google Maps Embed - Responsive height */}
@@ -420,7 +420,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900 text-sm sm:text-base">En transports</p>
-                      <p className="text-xs sm:text-sm text-gray-600">A 1 min du metro Hankar</p>
+                      <p className="text-xs sm:text-sm text-gray-600">À 1 min du métro Hankar</p>
                     </div>
                   </div>
                   <div className="flex items-start">
@@ -451,10 +451,10 @@ export default function ContactPage() {
             transition={{ duration: 0.5 }}
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">
-              Des questions avant de reserver ?
+              Des questions avant de réserver ?
             </h2>
             <p className="text-base sm:text-lg text-gray-600 mb-6 sm:mb-8 px-2">
-              N'hesitez pas a nous appeler directement pour toute question. Notre equipe se fera un plaisir de vous renseigner.
+              N'hésitez pas à nous appeler directement pour toute question. Notre équipe se fera un plaisir de vous renseigner.
             </p>
             <a
               href="tel:+32470078377"

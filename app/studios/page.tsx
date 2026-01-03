@@ -34,7 +34,7 @@ export default function StudiosPage() {
       title: 'Studio Vidéo',
       tagline: 'Créez du contenu qui marque',
       description: 'Studio vidéo complet avec éclairages cinématographiques et caméras 4K. Parfait pour YouTube, formations, interviews vidéo et contenus professionnels.',
-      image: '/photo/studio-video2-0.webp',
+      image: '/photo/studio-videoo.png',
       alt: 'Studio vidéo professionnel Bruxelles - Caméras 4K, éclairages LED et équipements YouTube à Auderghem',
       features: [
         'Caméras 4K professionnelles',
